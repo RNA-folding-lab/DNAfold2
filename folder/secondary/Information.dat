@@ -1,0 +1,817 @@
+CG beads number:   49,  the thread number:   16
+thread:  13,  CNa = 1000.000000,  CMg = 0.000000, t0 = 120.000000
+thread:  1,  CNa = 1000.000000,  CMg = 0.000000, t0 = 31.000000
+thread:  3,  CNa = 1000.000000,  CMg = 0.000000, t0 = 43.000000
+thread:  14,  CNa = 1000.000000,  CMg = 0.000000, t0 = 130.000000
+thread:  9,  CNa = 1000.000000,  CMg = 0.000000, t0 = 86.000000
+thread:  7,  CNa = 1000.000000,  CMg = 0.000000, t0 = 71.000000
+thread:  12,  CNa = 1000.000000,  CMg = 0.000000, t0 = 110.000000
+thread:  4,  CNa = 1000.000000,  CMg = 0.000000, t0 = 49.000000
+thread:  5,  CNa = 1000.000000,  CMg = 0.000000, t0 = 55.000000
+thread:  6,  CNa = 1000.000000,  CMg = 0.000000, t0 = 63.000000
+thread:  8,  CNa = 1000.000000,  CMg = 0.000000, t0 = 78.000000
+thread:  2,  CNa = 1000.000000,  CMg = 0.000000, t0 = 37.000000
+thread:  10,  CNa = 1000.000000,  CMg = 0.000000, t0 = 94.000000
+thread:  0,  CNa = 1000.000000,  CMg = 0.000000, t0 = 25.000000
+thread:  11,  CNa = 1000.000000,  CMg = 0.000000, t0 = 102.000000
+thread:  15,  CNa = 1000.000000,  CMg = 0.000000, t0 = 0.000000
+thread: 15,  step:  1000,     T:  0.0,    Energy: 152.218735 kcal/mol
+thread: 14,  step:  1000,     T:130.0,    Energy: 143.415604 kcal/mol
+thread: 2,  step:  1000,     T: 37.0,    Energy: 142.626907 kcal/mol
+thread: 7,  step:  1000,     T: 71.0,    Energy: 132.061874 kcal/mol
+thread: 4,  step:  1000,     T: 49.0,    Energy: 126.645111 kcal/mol
+thread: 8,  step:  1000,     T: 78.0,    Energy: 149.830765 kcal/mol
+thread: 6,  step:  1000,     T: 63.0,    Energy: 152.190475 kcal/mol
+thread: 10,  step:  1000,     T: 94.0,    Energy: 163.267502 kcal/mol
+thread: 9,  step:  1000,     T: 86.0,    Energy: 141.965927 kcal/mol
+thread: 1,  step:  1000,     T: 31.0,    Energy: 151.679977 kcal/mol
+thread: 13,  step:  1000,     T:120.0,    Energy: 129.923080 kcal/mol
+thread: 3,  step:  1000,     T: 43.0,    Energy: 149.782623 kcal/mol
+thread: 12,  step:  1000,     T:110.0,    Energy: 162.749771 kcal/mol
+thread: 11,  step:  1000,     T:102.0,    Energy: 176.646805 kcal/mol
+thread: 5,  step:  1000,     T: 55.0,    Energy: 151.565826 kcal/mol
+thread: 0,  step:  1000,     T: 25.0,    Energy: 157.117142 kcal/mol
+thread: 14,  step:  2000,     T:130.0,    Energy: 135.608536 kcal/mol
+thread: 15,  step:  2000,     T:  0.0,    Energy: 149.930450 kcal/mol
+thread: 7,  step:  2000,     T: 71.0,    Energy: 149.961197 kcal/mol
+thread: 2,  step:  2000,     T: 37.0,    Energy: 165.084015 kcal/mol
+thread: 9,  step:  2000,     T: 86.0,    Energy: 176.423691 kcal/mol
+thread: 6,  step:  2000,     T: 63.0,    Energy: 143.023621 kcal/mol
+thread: 4,  step:  2000,     T: 49.0,    Energy: 143.291931 kcal/mol
+thread: 3,  step:  2000,     T: 43.0,    Energy: 145.166321 kcal/mol
+thread: 8,  step:  2000,     T: 78.0,    Energy: 139.035873 kcal/mol
+thread: 10,  step:  2000,     T: 94.0,    Energy: 127.659012 kcal/mol
+thread: 1,  step:  2000,     T: 31.0,    Energy: 129.522339 kcal/mol
+thread: 12,  step:  2000,     T:110.0,    Energy: 130.447327 kcal/mol
+thread: 11,  step:  2000,     T:102.0,    Energy: 153.506607 kcal/mol
+thread: 13,  step:  2000,     T:120.0,    Energy: 155.009140 kcal/mol
+thread: 5,  step:  2000,     T: 55.0,    Energy: 138.268326 kcal/mol
+thread: 0,  step:  2000,     T: 25.0,    Energy: 138.111084 kcal/mol
+thread: 14,  step:  3000,     T:130.0,    Energy: 120.835320 kcal/mol
+thread: 15,  step:  3000,     T:  0.0,    Energy: 149.396011 kcal/mol
+thread: 9,  step:  3000,     T: 86.0,    Energy: 145.907883 kcal/mol
+thread: 6,  step:  3000,     T: 63.0,    Energy: 148.192841 kcal/mol
+thread: 7,  step:  3000,     T: 71.0,    Energy: 143.080811 kcal/mol
+thread: 2,  step:  3000,     T: 37.0,    Energy: 142.493851 kcal/mol
+thread: 15,  step:  4000,     T:  0.0,    Energy: 142.837524 kcal/mol
+thread: 14,  step:  4000,     T:130.0,    Energy: 137.232239 kcal/mol
+thread: 4,  step:  3000,     T: 49.0,    Energy: 137.701202 kcal/mol
+thread: 3,  step:  3000,     T: 43.0,    Energy: 151.670868 kcal/mol
+thread: 5,  step:  3000,     T: 55.0,    Energy: 158.540695 kcal/mol
+thread: 0,  step:  3000,     T: 25.0,    Energy: 138.269943 kcal/mol
+thread: 8,  step:  3000,     T: 78.0,    Energy: 145.640549 kcal/mol
+thread: 10,  step:  3000,     T: 94.0,    Energy: 162.752472 kcal/mol
+thread: 1,  step:  3000,     T: 31.0,    Energy: 149.349686 kcal/mol
+thread: 11,  step:  3000,     T:102.0,    Energy: 245.235504 kcal/mol
+thread: 13,  step:  3000,     T:120.0,    Energy: 140.598724 kcal/mol
+thread: 12,  step:  3000,     T:110.0,    Energy: 140.246628 kcal/mol
+thread: 9,  step:  4000,     T: 86.0,    Energy: 138.432770 kcal/mol
+thread: 6,  step:  4000,     T: 63.0,    Energy: 142.674042 kcal/mol
+thread: 7,  step:  4000,     T: 71.0,    Energy: 140.403091 kcal/mol
+thread: 5,  step:  4000,     T: 55.0,    Energy: 123.912369 kcal/mol
+thread: 0,  step:  4000,     T: 25.0,    Energy: 126.244026 kcal/mol
+thread: 2,  step:  4000,     T: 37.0,    Energy: 149.098633 kcal/mol
+thread: 9,  step:  5000,     T: 86.0,    Energy: 147.199417 kcal/mol
+thread: 15,  step:  5000,     T:  0.0,    Energy: 138.304825 kcal/mol
+thread: 3,  step:  4000,     T: 43.0,    Energy: 150.745117 kcal/mol
+thread: 14,  step:  5000,     T:130.0,    Energy: 145.818359 kcal/mol
+thread: 4,  step:  4000,     T: 49.0,    Energy: 162.732910 kcal/mol
+thread: 8,  step:  4000,     T: 78.0,    Energy: 198.191727 kcal/mol
+thread: 10,  step:  4000,     T: 94.0,    Energy: 120.106895 kcal/mol
+thread: 1,  step:  4000,     T: 31.0,    Energy: 134.958618 kcal/mol
+thread: 11,  step:  4000,     T:102.0,    Energy: 149.627319 kcal/mol
+thread: 13,  step:  4000,     T:120.0,    Energy: 137.296692 kcal/mol
+thread: 12,  step:  4000,     T:110.0,    Energy: 135.380753 kcal/mol
+thread: 6,  step:  5000,     T: 63.0,    Energy: 138.402344 kcal/mol
+thread: 9,  step:  6000,     T: 86.0,    Energy: 144.398483 kcal/mol
+thread: 5,  step:  5000,     T: 55.0,    Energy: 145.571503 kcal/mol
+thread: 0,  step:  5000,     T: 25.0,    Energy: 125.638039 kcal/mol
+thread: 3,  step:  5000,     T: 43.0,    Energy: 142.139206 kcal/mol
+thread: 7,  step:  5000,     T: 71.0,    Energy: 156.151184 kcal/mol
+thread: 2,  step:  5000,     T: 37.0,    Energy: 190.110062 kcal/mol
+thread: 15,  step:  6000,     T:  0.0,    Energy: 151.058517 kcal/mol
+thread: 14,  step:  6000,     T:130.0,    Energy: 147.957947 kcal/mol
+thread: 4,  step:  5000,     T: 49.0,    Energy: 141.153061 kcal/mol
+thread: 6,  step:  6000,     T: 63.0,    Energy: 158.475967 kcal/mol
+thread: 10,  step:  5000,     T: 94.0,    Energy: 115.498428 kcal/mol
+thread: 8,  step:  5000,     T: 78.0,    Energy: 125.979004 kcal/mol
+thread: 1,  step:  5000,     T: 31.0,    Energy: 153.681732 kcal/mol
+thread: 12,  step:  5000,     T:110.0,    Energy: 144.219162 kcal/mol
+thread: 13,  step:  5000,     T:120.0,    Energy: 142.286041 kcal/mol
+thread: 11,  step:  5000,     T:102.0,    Energy: 139.577728 kcal/mol
+thread: 9,  step:  7000,     T: 86.0,    Energy: 150.900528 kcal/mol
+thread: 7,  step:  6000,     T: 71.0,    Energy: 150.390900 kcal/mol
+thread: 3,  step:  6000,     T: 43.0,    Energy: 160.680237 kcal/mol
+thread: 5,  step:  6000,     T: 55.0,    Energy: 139.476685 kcal/mol
+thread: 0,  step:  6000,     T: 25.0,    Energy: 154.906631 kcal/mol
+thread: 6,  step:  7000,     T: 63.0,    Energy: 150.135071 kcal/mol
+thread: 15,  step:  7000,     T:  0.0,    Energy: 151.776169 kcal/mol
+thread: 1,  step:  6000,     T: 31.0,    Energy: 150.809540 kcal/mol
+thread: 2,  step:  6000,     T: 37.0,    Energy: 146.367798 kcal/mol
+thread: 14,  step:  7000,     T:130.0,    Energy: 144.670944 kcal/mol
+thread: 13,  step:  6000,     T:120.0,    Energy: 124.023811 kcal/mol
+thread: 9,  step:  8000,     T: 86.0,    Energy: 148.017059 kcal/mol
+thread: 4,  step:  6000,     T: 49.0,    Energy: 140.007187 kcal/mol
+thread: 10,  step:  6000,     T: 94.0,    Energy: 152.077789 kcal/mol
+thread: 11,  step:  6000,     T:102.0,    Energy: 137.375290 kcal/mol
+thread: 8,  step:  6000,     T: 78.0,    Energy: 132.213531 kcal/mol
+thread: 12,  step:  6000,     T:110.0,    Energy: 142.598358 kcal/mol
+thread: 7,  step:  7000,     T: 71.0,    Energy: 124.449059 kcal/mol
+thread: 5,  step:  7000,     T: 55.0,    Energy: 143.085587 kcal/mol
+thread: 3,  step:  7000,     T: 43.0,    Energy: 153.851562 kcal/mol
+thread: 6,  step:  8000,     T: 63.0,    Energy: 130.952789 kcal/mol
+thread: 1,  step:  7000,     T: 31.0,    Energy: 144.437576 kcal/mol
+thread: 0,  step:  7000,     T: 25.0,    Energy: 125.969681 kcal/mol
+thread: 11,  step:  7000,     T:102.0,    Energy: 140.855637 kcal/mol
+thread: 15,  step:  8000,     T:  0.0,    Energy: 140.615936 kcal/mol
+thread: 2,  step:  7000,     T: 37.0,    Energy: 136.157028 kcal/mol
+thread: 7,  step:  8000,     T: 71.0,    Energy: 125.216553 kcal/mol
+thread: 14,  step:  8000,     T:130.0,    Energy: 153.074295 kcal/mol
+thread: 13,  step:  7000,     T:120.0,    Energy: 128.708633 kcal/mol
+thread: 10,  step:  7000,     T: 94.0,    Energy: 143.377258 kcal/mol
+thread: 9,  step:  9000,     T: 86.0,    Energy: 142.060837 kcal/mol
+thread: 4,  step:  7000,     T: 49.0,    Energy: 116.976204 kcal/mol
+thread: 8,  step:  7000,     T: 78.0,    Energy: 154.131104 kcal/mol
+thread: 1,  step:  8000,     T: 31.0,    Energy: 137.247833 kcal/mol
+thread: 6,  step:  9000,     T: 63.0,    Energy: 132.831772 kcal/mol
+thread: 12,  step:  7000,     T:110.0,    Energy: 151.700211 kcal/mol
+thread: 3,  step:  8000,     T: 43.0,    Energy: 148.986115 kcal/mol
+thread: 5,  step:  8000,     T: 55.0,    Energy: 131.792221 kcal/mol
+thread: 0,  step:  8000,     T: 25.0,    Energy: 187.979065 kcal/mol
+thread: 7,  step:  9000,     T: 71.0,    Energy: 145.455643 kcal/mol
+thread: 11,  step:  8000,     T:102.0,    Energy: 139.919373 kcal/mol
+thread: 15,  step:  9000,     T:  0.0,    Energy: 130.067413 kcal/mol
+thread: 6,  step: 10000,     T: 63.0,    Energy: 138.477936 kcal/mol
+thread: 2,  step:  8000,     T: 37.0,    Energy: 127.978554 kcal/mol
+thread: 14,  step:  9000,     T:130.0,    Energy: 140.511734 kcal/mol
+thread: 1,  step:  9000,     T: 31.0,    Energy: 146.695694 kcal/mol
+thread: 10,  step:  8000,     T: 94.0,    Energy: 122.942497 kcal/mol
+thread: 13,  step:  8000,     T:120.0,    Energy: 149.944016 kcal/mol
+thread: 9,  step: 10000,     T: 86.0,    Energy: 147.357422 kcal/mol
+thread: 4,  step:  8000,     T: 49.0,    Energy: 129.156372 kcal/mol
+thread: 8,  step:  8000,     T: 78.0,    Energy: 161.221024 kcal/mol
+thread: 5,  step:  9000,     T: 55.0,    Energy: 131.001282 kcal/mol
+thread: 12,  step:  8000,     T:110.0,    Energy: 136.673264 kcal/mol
+thread: 3,  step:  9000,     T: 43.0,    Energy: 145.478333 kcal/mol
+thread: 0,  step:  9000,     T: 25.0,    Energy: 138.183350 kcal/mol
+thread: 6,  step: 11000,     T: 63.0,    Energy: 152.912933 kcal/mol
+thread: 11,  step:  9000,     T:102.0,    Energy: 140.443817 kcal/mol
+thread: 7,  step: 10000,     T: 71.0,    Energy: 131.097122 kcal/mol
+thread: 5,  step: 10000,     T: 55.0,    Energy: 361.087799 kcal/mol
+thread: 15,  step: 10000,     T:  0.0,    Energy: 135.136276 kcal/mol
+thread: 2,  step:  9000,     T: 37.0,    Energy: 131.308868 kcal/mol
+thread: 14,  step: 10000,     T:130.0,    Energy: 127.550529 kcal/mol
+thread: 1,  step: 10000,     T: 31.0,    Energy: 128.104141 kcal/mol
+thread: 10,  step:  9000,     T: 94.0,    Energy: 157.488846 kcal/mol
+thread: 13,  step:  9000,     T:120.0,    Energy: 136.280167 kcal/mol
+thread: 3,  step: 10000,     T: 43.0,    Energy: 120.257591 kcal/mol
+thread: 9,  step: 11000,     T: 86.0,    Energy: 142.518585 kcal/mol
+thread: 4,  step:  9000,     T: 49.0,    Energy: 142.990723 kcal/mol
+thread: 8,  step:  9000,     T: 78.0,    Energy: 138.011368 kcal/mol
+thread: 6,  step: 12000,     T: 63.0,    Energy: 143.466812 kcal/mol
+thread: 11,  step: 10000,     T:102.0,    Energy: 139.159744 kcal/mol
+thread: 12,  step:  9000,     T:110.0,    Energy: 138.981293 kcal/mol
+thread: 0,  step: 10000,     T: 25.0,    Energy: 134.813980 kcal/mol
+thread: 5,  step: 11000,     T: 55.0,    Energy: 129.345245 kcal/mol
+thread: 7,  step: 11000,     T: 71.0,    Energy: 145.808289 kcal/mol
+thread: 3,  step: 11000,     T: 43.0,    Energy: 126.033012 kcal/mol
+thread: 15,  step: 11000,     T:  0.0,    Energy: 136.560562 kcal/mol
+thread: 11,  step: 11000,     T:102.0,    Energy: 145.291092 kcal/mol
+thread: 6,  step: 13000,     T: 63.0,    Energy: 128.647675 kcal/mol
+thread: 2,  step: 10000,     T: 37.0,    Energy: 118.117088 kcal/mol
+thread: 14,  step: 11000,     T:130.0,    Energy: 127.735794 kcal/mol
+thread: 1,  step: 11000,     T: 31.0,    Energy: 136.101013 kcal/mol
+thread: 13,  step: 10000,     T:120.0,    Energy: 132.551346 kcal/mol
+thread: 10,  step: 10000,     T: 94.0,    Energy: 142.922577 kcal/mol
+thread: 9,  step: 12000,     T: 86.0,    Energy: 121.795654 kcal/mol
+thread: 4,  step: 10000,     T: 49.0,    Energy: 136.953415 kcal/mol
+thread: 8,  step: 10000,     T: 78.0,    Energy: 126.794502 kcal/mol
+thread: 5,  step: 12000,     T: 55.0,    Energy: 139.092117 kcal/mol
+thread: 12,  step: 10000,     T:110.0,    Energy: 123.697144 kcal/mol
+thread: 0,  step: 11000,     T: 25.0,    Energy: 139.503143 kcal/mol
+thread: 3,  step: 12000,     T: 43.0,    Energy: 134.833481 kcal/mol
+thread: 11,  step: 12000,     T:102.0,    Energy: 137.282181 kcal/mol
+thread: 6,  step: 14000,     T: 63.0,    Energy: 143.368210 kcal/mol
+thread: 7,  step: 12000,     T: 71.0,    Energy: 138.897385 kcal/mol
+thread: 15,  step: 12000,     T:  0.0,    Energy: 118.751671 kcal/mol
+thread: 5,  step: 13000,     T: 55.0,    Energy: 125.193939 kcal/mol
+thread: 2,  step: 11000,     T: 37.0,    Energy: 136.080841 kcal/mol
+thread: 4,  step: 11000,     T: 49.0,    Energy: 132.950485 kcal/mol
+thread: 14,  step: 12000,     T:130.0,    Energy: 134.542450 kcal/mol
+thread: 13,  step: 11000,     T:120.0,    Energy: 137.080917 kcal/mol
+thread: 1,  step: 12000,     T: 31.0,    Energy: 157.881866 kcal/mol
+thread: 10,  step: 11000,     T: 94.0,    Energy: 133.075104 kcal/mol
+thread: 9,  step: 13000,     T: 86.0,    Energy: 151.256165 kcal/mol
+thread: 8,  step: 11000,     T: 78.0,    Energy: 141.876984 kcal/mol
+thread: 11,  step: 13000,     T:102.0,    Energy: 126.847397 kcal/mol
+thread: 12,  step: 11000,     T:110.0,    Energy: 141.533020 kcal/mol
+thread: 6,  step: 15000,     T: 63.0,    Energy: 140.994919 kcal/mol
+thread: 0,  step: 12000,     T: 25.0,    Energy: 126.087234 kcal/mol
+thread: 3,  step: 13000,     T: 43.0,    Energy: 121.523514 kcal/mol
+thread: 5,  step: 14000,     T: 55.0,    Energy: 125.979744 kcal/mol
+thread: 4,  step: 12000,     T: 49.0,    Energy: 151.346436 kcal/mol
+thread: 7,  step: 13000,     T: 71.0,    Energy: 121.937294 kcal/mol
+thread: 11,  step: 14000,     T:102.0,    Energy: 134.722458 kcal/mol
+thread: 15,  step: 13000,     T:  0.0,    Energy: 125.778419 kcal/mol
+thread: 2,  step: 12000,     T: 37.0,    Energy: 139.527100 kcal/mol
+thread: 8,  step: 12000,     T: 78.0,    Energy: 150.495514 kcal/mol
+thread: 14,  step: 13000,     T:130.0,    Energy: 152.164902 kcal/mol
+thread: 13,  step: 12000,     T:120.0,    Energy: 130.637863 kcal/mol
+thread: 1,  step: 13000,     T: 31.0,    Energy: 141.161743 kcal/mol
+thread: 10,  step: 12000,     T: 94.0,    Energy: 129.336243 kcal/mol
+thread: 6,  step: 16000,     T: 63.0,    Energy: 156.206604 kcal/mol
+thread: 9,  step: 14000,     T: 86.0,    Energy: 132.405029 kcal/mol
+thread: 12,  step: 12000,     T:110.0,    Energy: 131.155762 kcal/mol
+thread: 0,  step: 13000,     T: 25.0,    Energy: 152.494537 kcal/mol
+thread: 4,  step: 13000,     T: 49.0,    Energy: 133.953568 kcal/mol
+thread: 3,  step: 14000,     T: 43.0,    Energy: 141.671631 kcal/mol
+thread: 5,  step: 15000,     T: 55.0,    Energy: 194.897461 kcal/mol
+thread: 8,  step: 13000,     T: 78.0,    Energy: 159.184036 kcal/mol
+thread: 7,  step: 14000,     T: 71.0,    Energy: 129.118973 kcal/mol
+thread: 6,  step: 17000,     T: 63.0,    Energy: 145.265610 kcal/mol
+thread: 11,  step: 15000,     T:102.0,    Energy: 134.406219 kcal/mol
+thread: 15,  step: 14000,     T:  0.0,    Energy: 148.334915 kcal/mol
+thread: 2,  step: 13000,     T: 37.0,    Energy: 128.264893 kcal/mol
+thread: 0,  step: 14000,     T: 25.0,    Energy: 133.893646 kcal/mol
+thread: 13,  step: 13000,     T:120.0,    Energy: 146.343277 kcal/mol
+thread: 4,  step: 14000,     T: 49.0,    Energy: 129.181366 kcal/mol
+thread: 14,  step: 14000,     T:130.0,    Energy: 125.226440 kcal/mol
+thread: 1,  step: 14000,     T: 31.0,    Energy: 133.463913 kcal/mol
+thread: 10,  step: 13000,     T: 94.0,    Energy: 144.768280 kcal/mol
+thread: 9,  step: 15000,     T: 86.0,    Energy: 126.708504 kcal/mol
+thread: 12,  step: 13000,     T:110.0,    Energy: 124.961426 kcal/mol
+thread: 8,  step: 14000,     T: 78.0,    Energy: 131.271225 kcal/mol
+thread: 6,  step: 18000,     T: 63.0,    Energy: 139.375046 kcal/mol
+thread: 3,  step: 15000,     T: 43.0,    Energy: 123.987289 kcal/mol
+thread: 5,  step: 16000,     T: 55.0,    Energy: 157.061279 kcal/mol
+thread: 0,  step: 15000,     T: 25.0,    Energy: 146.100220 kcal/mol
+thread: 4,  step: 15000,     T: 49.0,    Energy: 128.252686 kcal/mol
+thread: 7,  step: 15000,     T: 71.0,    Energy: 129.145050 kcal/mol
+thread: 11,  step: 16000,     T:102.0,    Energy: 144.557129 kcal/mol
+thread: 15,  step: 15000,     T:  0.0,    Energy: 128.404037 kcal/mol
+thread: 2,  step: 14000,     T: 37.0,    Energy: 147.043137 kcal/mol
+thread: 13,  step: 14000,     T:120.0,    Energy: 141.691910 kcal/mol
+thread: 1,  step: 15000,     T: 31.0,    Energy: 140.362000 kcal/mol
+thread: 14,  step: 15000,     T:130.0,    Energy: 126.848732 kcal/mol
+thread: 8,  step: 15000,     T: 78.0,    Energy: 158.315292 kcal/mol
+thread: 10,  step: 14000,     T: 94.0,    Energy: 138.690826 kcal/mol
+thread: 9,  step: 16000,     T: 86.0,    Energy: 106.222443 kcal/mol
+thread: 6,  step: 19000,     T: 63.0,    Energy: 167.825500 kcal/mol
+thread: 12,  step: 14000,     T:110.0,    Energy: 142.911438 kcal/mol
+thread: 4,  step: 16000,     T: 49.0,    Energy: 147.963638 kcal/mol
+thread: 11,  step: 17000,     T:102.0,    Energy: 144.875977 kcal/mol
+thread: 0,  step: 16000,     T: 25.0,    Energy: 150.556686 kcal/mol
+thread: 3,  step: 16000,     T: 43.0,    Energy: 127.639824 kcal/mol
+thread: 5,  step: 17000,     T: 55.0,    Energy: 127.574478 kcal/mol
+thread: 8,  step: 16000,     T: 78.0,    Energy: 138.319565 kcal/mol
+thread: 7,  step: 16000,     T: 71.0,    Energy: 120.244492 kcal/mol
+thread: 6,  step: 20000,     T: 63.0,    Energy: 138.814056 kcal/mol
+thread: 15,  step: 16000,     T:  0.0,    Energy: 143.961060 kcal/mol
+thread: 2,  step: 15000,     T: 37.0,    Energy: 141.819305 kcal/mol
+thread: 13,  step: 15000,     T:120.0,    Energy: 128.222855 kcal/mol
+thread: 1,  step: 16000,     T: 31.0,    Energy: 135.968597 kcal/mol
+thread: 14,  step: 16000,     T:130.0,    Energy: 116.879524 kcal/mol
+thread: 10,  step: 15000,     T: 94.0,    Energy: 144.191055 kcal/mol
+thread: 4,  step: 17000,     T: 49.0,    Energy: 134.013718 kcal/mol
+thread: 9,  step: 17000,     T: 86.0,    Energy: 120.858292 kcal/mol
+thread: 12,  step: 15000,     T:110.0,    Energy: 137.564743 kcal/mol
+thread: 5,  step: 18000,     T: 55.0,    Energy: 133.710678 kcal/mol
+thread: 8,  step: 17000,     T: 78.0,    Energy: 139.881332 kcal/mol
+thread: 11,  step: 18000,     T:102.0,    Energy: 153.102722 kcal/mol
+thread: 0,  step: 17000,     T: 25.0,    Energy: 142.195801 kcal/mol
+thread: 6,  step: 21000,     T: 63.0,    Energy: 122.226997 kcal/mol
+thread: 3,  step: 17000,     T: 43.0,    Energy: 130.982498 kcal/mol
+thread: 7,  step: 17000,     T: 71.0,    Energy: 135.223663 kcal/mol
+thread: 4,  step: 18000,     T: 49.0,    Energy: 195.410492 kcal/mol
+thread: 15,  step: 17000,     T:  0.0,    Energy: 146.452728 kcal/mol
+thread: 13,  step: 16000,     T:120.0,    Energy: 137.362671 kcal/mol
+thread: 2,  step: 16000,     T: 37.0,    Energy: 131.386292 kcal/mol
+thread: 5,  step: 19000,     T: 55.0,    Energy: 158.056885 kcal/mol
+thread: 1,  step: 17000,     T: 31.0,    Energy: 118.337372 kcal/mol
+thread: 14,  step: 17000,     T:130.0,    Energy: 142.297791 kcal/mol
+thread: 10,  step: 16000,     T: 94.0,    Energy: 147.340820 kcal/mol
+thread: 8,  step: 18000,     T: 78.0,    Energy: 152.592865 kcal/mol
+thread: 9,  step: 18000,     T: 86.0,    Energy: 130.187531 kcal/mol
+thread: 12,  step: 16000,     T:110.0,    Energy: 140.363480 kcal/mol
+thread: 6,  step: 22000,     T: 63.0,    Energy: 178.095169 kcal/mol
+thread: 4,  step: 19000,     T: 49.0,    Energy: 129.011261 kcal/mol
+thread: 0,  step: 18000,     T: 25.0,    Energy: 128.216843 kcal/mol
+thread: 11,  step: 19000,     T:102.0,    Energy: 169.885803 kcal/mol
+thread: 3,  step: 18000,     T: 43.0,    Energy: 126.617531 kcal/mol
+thread: 5,  step: 20000,     T: 55.0,    Energy: 141.513000 kcal/mol
+thread: 7,  step: 18000,     T: 71.0,    Energy: 142.607712 kcal/mol
+thread: 8,  step: 19000,     T: 78.0,    Energy: 145.279800 kcal/mol
+thread: 6,  step: 23000,     T: 63.0,    Energy: 148.380600 kcal/mol
+thread: 15,  step: 18000,     T:  0.0,    Energy: 143.587433 kcal/mol
+thread: 13,  step: 17000,     T:120.0,    Energy: 150.055008 kcal/mol
+thread: 2,  step: 17000,     T: 37.0,    Energy: 148.103455 kcal/mol
+thread: 1,  step: 18000,     T: 31.0,    Energy: 145.302338 kcal/mol
+thread: 14,  step: 18000,     T:130.0,    Energy: 145.890762 kcal/mol
+thread: 10,  step: 17000,     T: 94.0,    Energy: 165.448074 kcal/mol
+thread: 9,  step: 19000,     T: 86.0,    Energy: 130.631851 kcal/mol
+thread: 12,  step: 17000,     T:110.0,    Energy: 121.120926 kcal/mol
+thread: 4,  step: 20000,     T: 49.0,    Energy: 112.570496 kcal/mol
+thread: 5,  step: 21000,     T: 55.0,    Energy: 144.234421 kcal/mol
+thread: 8,  step: 20000,     T: 78.0,    Energy: 192.900360 kcal/mol
+thread: 0,  step: 19000,     T: 25.0,    Energy: 135.449600 kcal/mol
+thread: 11,  step: 20000,     T:102.0,    Energy: 155.346573 kcal/mol
+thread: 6,  step: 24000,     T: 63.0,    Energy: 138.686478 kcal/mol
+thread: 3,  step: 19000,     T: 43.0,    Energy: 123.553642 kcal/mol
+thread: 7,  step: 19000,     T: 71.0,    Energy: 128.728867 kcal/mol
+thread: 4,  step: 21000,     T: 49.0,    Energy: 146.181305 kcal/mol
+thread: 10,  step: 18000,     T: 94.0,    Energy: 146.481339 kcal/mol
+thread: 13,  step: 18000,     T:120.0,    Energy: 123.037102 kcal/mol
+thread: 15,  step: 19000,     T:  0.0,    Energy: 130.824646 kcal/mol
+thread: 2,  step: 18000,     T: 37.0,    Energy: 147.086273 kcal/mol
+thread: 1,  step: 19000,     T: 31.0,    Energy: 156.241745 kcal/mol
+thread: 14,  step: 19000,     T:130.0,    Energy: 134.336624 kcal/mol
+thread: 9,  step: 20000,     T: 86.0,    Energy: 150.758606 kcal/mol
+thread: 8,  step: 21000,     T: 78.0,    Energy: 137.776123 kcal/mol
+thread: 12,  step: 18000,     T:110.0,    Energy: 118.891937 kcal/mol
+thread: 5,  step: 22000,     T: 55.0,    Energy: 122.602013 kcal/mol
+thread: 6,  step: 25000,     T: 63.0,    Energy: 121.004349 kcal/mol
+thread: 0,  step: 20000,     T: 25.0,    Energy: 135.465134 kcal/mol
+thread: 11,  step: 21000,     T:102.0,    Energy: 148.422516 kcal/mol
+thread: 4,  step: 22000,     T: 49.0,    Energy: 128.610657 kcal/mol
+thread: 3,  step: 20000,     T: 43.0,    Energy: 135.753510 kcal/mol
+thread: 10,  step: 19000,     T: 94.0,    Energy: 136.709976 kcal/mol
+thread: 7,  step: 20000,     T: 71.0,    Energy: 134.567886 kcal/mol
+thread: 8,  step: 22000,     T: 78.0,    Energy: 162.199265 kcal/mol
+thread: 6,  step: 26000,     T: 63.0,    Energy: 139.583160 kcal/mol
+thread: 13,  step: 19000,     T:120.0,    Energy: 138.240189 kcal/mol
+thread: 15,  step: 20000,     T:  0.0,    Energy: 125.206711 kcal/mol
+thread: 2,  step: 19000,     T: 37.0,    Energy: 128.125732 kcal/mol
+thread: 1,  step: 20000,     T: 31.0,    Energy: 150.063568 kcal/mol
+thread: 14,  step: 20000,     T:130.0,    Energy: 127.009941 kcal/mol
+thread: 9,  step: 21000,     T: 86.0,    Energy: 155.261322 kcal/mol
+thread: 12,  step: 19000,     T:110.0,    Energy: 121.999336 kcal/mol
+thread: 4,  step: 23000,     T: 49.0,    Energy: 154.083145 kcal/mol
+thread: 5,  step: 23000,     T: 55.0,    Energy: 125.488914 kcal/mol
+thread: 10,  step: 20000,     T: 94.0,    Energy: 138.422180 kcal/mol
+thread: 0,  step: 21000,     T: 25.0,    Energy: 138.215302 kcal/mol
+thread: 8,  step: 23000,     T: 78.0,    Energy: 121.319275 kcal/mol
+thread: 11,  step: 22000,     T:102.0,    Energy: 149.807510 kcal/mol
+thread: 3,  step: 21000,     T: 43.0,    Energy: 144.729736 kcal/mol
+thread: 6,  step: 27000,     T: 63.0,    Energy: 136.751694 kcal/mol
+thread: 7,  step: 21000,     T: 71.0,    Energy: 140.110092 kcal/mol
+thread: 4,  step: 24000,     T: 49.0,    Energy: 147.400589 kcal/mol
+thread: 13,  step: 20000,     T:120.0,    Energy: 107.730606 kcal/mol
+thread: 10,  step: 21000,     T: 94.0,    Energy: 123.993050 kcal/mol
+thread: 15,  step: 21000,     T:  0.0,    Energy: 136.657272 kcal/mol
+thread: 1,  step: 21000,     T: 31.0,    Energy: 131.511093 kcal/mol
+thread: 2,  step: 20000,     T: 37.0,    Energy: 137.183899 kcal/mol
+thread: 14,  step: 21000,     T:130.0,    Energy: 140.065918 kcal/mol
+thread: 9,  step: 22000,     T: 86.0,    Energy: 146.806107 kcal/mol
+thread: 12,  step: 20000,     T:110.0,    Energy: 115.094398 kcal/mol
+thread: 5,  step: 24000,     T: 55.0,    Energy: 119.600990 kcal/mol
+thread: 11,  step: 23000,     T:102.0,    Energy: 130.334793 kcal/mol
+thread: 6,  step: 28000,     T: 63.0,    Energy: 145.155151 kcal/mol
+thread: 8,  step: 24000,     T: 78.0,    Energy: 148.167023 kcal/mol
+thread: 0,  step: 22000,     T: 25.0,    Energy: 122.853508 kcal/mol
+thread: 4,  step: 25000,     T: 49.0,    Energy: 137.897385 kcal/mol
+thread: 3,  step: 22000,     T: 43.0,    Energy: 143.197449 kcal/mol
+thread: 10,  step: 22000,     T: 94.0,    Energy: 139.364502 kcal/mol
+thread: 7,  step: 22000,     T: 71.0,    Energy: 129.967850 kcal/mol
+thread: 13,  step: 21000,     T:120.0,    Energy: 137.314377 kcal/mol
+thread: 11,  step: 24000,     T:102.0,    Energy: 125.497643 kcal/mol
+thread: 1,  step: 22000,     T: 31.0,    Energy: 137.320526 kcal/mol
+thread: 15,  step: 22000,     T:  0.0,    Energy: 121.503365 kcal/mol
+thread: 2,  step: 21000,     T: 37.0,    Energy: 121.879829 kcal/mol
+thread: 6,  step: 29000,     T: 63.0,    Energy: 139.933273 kcal/mol
+thread: 14,  step: 22000,     T:130.0,    Energy: 141.149872 kcal/mol
+thread: 9,  step: 23000,     T: 86.0,    Energy: 133.325760 kcal/mol
+thread: 12,  step: 21000,     T:110.0,    Energy: 132.389572 kcal/mol
+thread: 8,  step: 25000,     T: 78.0,    Energy: 144.098480 kcal/mol
+thread: 5,  step: 25000,     T: 55.0,    Energy: 155.242584 kcal/mol
+thread: 10,  step: 23000,     T: 94.0,    Energy: 132.421982 kcal/mol
+thread: 0,  step: 23000,     T: 25.0,    Energy: 129.278671 kcal/mol
+thread: 4,  step: 26000,     T: 49.0,    Energy: 135.108612 kcal/mol
+thread: 13,  step: 22000,     T:120.0,    Energy: 158.029022 kcal/mol
+thread: 3,  step: 23000,     T: 43.0,    Energy: 135.240829 kcal/mol
+thread: 7,  step: 23000,     T: 71.0,    Energy: 137.418045 kcal/mol
+thread: 11,  step: 25000,     T:102.0,    Energy: 128.632965 kcal/mol
+thread: 8,  step: 26000,     T: 78.0,    Energy: 134.752609 kcal/mol
+thread: 1,  step: 23000,     T: 31.0,    Energy: 142.457855 kcal/mol
+thread: 10,  step: 24000,     T: 94.0,    Energy: 125.866104 kcal/mol
+thread: 15,  step: 23000,     T:  0.0,    Energy: 136.914703 kcal/mol
+thread: 2,  step: 22000,     T: 37.0,    Energy: 152.307343 kcal/mol
+thread: 6,  step: 30000,     T: 63.0,    Energy: 127.804573 kcal/mol
+thread: 14,  step: 23000,     T:130.0,    Energy: 154.811615 kcal/mol
+thread: 9,  step: 24000,     T: 86.0,    Energy: 143.402603 kcal/mol
+thread: 12,  step: 22000,     T:110.0,    Energy: 128.996460 kcal/mol
+thread: 13,  step: 23000,     T:120.0,    Energy: 144.707504 kcal/mol
+thread: 5,  step: 26000,     T: 55.0,    Energy: 147.533051 kcal/mol
+thread: 11,  step: 26000,     T:102.0,    Energy: 177.802704 kcal/mol
+thread: 0,  step: 24000,     T: 25.0,    Energy: 144.731323 kcal/mol
+thread: 4,  step: 27000,     T: 49.0,    Energy: 132.882034 kcal/mol
+thread: 8,  step: 27000,     T: 78.0,    Energy: 130.693207 kcal/mol
+thread: 3,  step: 24000,     T: 43.0,    Energy: 130.564987 kcal/mol
+thread: 7,  step: 24000,     T: 71.0,    Energy: 143.798065 kcal/mol
+thread: 10,  step: 25000,     T: 94.0,    Energy: 112.509445 kcal/mol
+thread: 13,  step: 24000,     T:120.0,    Energy: 116.199532 kcal/mol
+thread: 1,  step: 24000,     T: 31.0,    Energy: 168.508408 kcal/mol
+thread: 15,  step: 24000,     T:  0.0,    Energy: 150.301987 kcal/mol
+thread: 2,  step: 23000,     T: 37.0,    Energy: 150.309631 kcal/mol
+thread: 11,  step: 27000,     T:102.0,    Energy: 147.921661 kcal/mol
+thread: 6,  step: 31000,     T: 63.0,    Energy: 152.138168 kcal/mol
+thread: 14,  step: 24000,     T:130.0,    Energy: 167.194901 kcal/mol
+thread: 9,  step: 25000,     T: 86.0,    Energy: 142.887497 kcal/mol
+thread: 12,  step: 23000,     T:110.0,    Energy: 218.485046 kcal/mol
+thread: 5,  step: 27000,     T: 55.0,    Energy: 137.248291 kcal/mol
+thread: 4,  step: 28000,     T: 49.0,    Energy: 145.715103 kcal/mol
+thread: 8,  step: 28000,     T: 78.0,    Energy: 128.632263 kcal/mol
+thread: 0,  step: 25000,     T: 25.0,    Energy: 130.654877 kcal/mol
+thread: 13,  step: 25000,     T:120.0,    Energy: 124.294678 kcal/mol
+thread: 10,  step: 26000,     T: 94.0,    Energy: 147.203583 kcal/mol
+thread: 3,  step: 25000,     T: 43.0,    Energy: 112.818459 kcal/mol
+thread: 7,  step: 25000,     T: 71.0,    Energy: 174.325882 kcal/mol
+thread: 14,  step: 25000,     T:130.0,    Energy: 145.420715 kcal/mol
+thread: 11,  step: 28000,     T:102.0,    Energy: 148.711227 kcal/mol
+thread: 2,  step: 24000,     T: 37.0,    Energy: 148.267792 kcal/mol
+thread: 6,  step: 32000,     T: 63.0,    Energy: 126.174774 kcal/mol
+thread: 1,  step: 25000,     T: 31.0,    Energy: 133.406555 kcal/mol
+thread: 15,  step: 25000,     T:  0.0,    Energy: 141.436722 kcal/mol
+thread: 9,  step: 26000,     T: 86.0,    Energy: 140.268845 kcal/mol
+thread: 12,  step: 24000,     T:110.0,    Energy: 123.072380 kcal/mol
+thread: 13,  step: 26000,     T:120.0,    Energy: 129.797165 kcal/mol
+thread: 5,  step: 28000,     T: 55.0,    Energy: 151.426422 kcal/mol
+thread: 4,  step: 29000,     T: 49.0,    Energy: 191.352142 kcal/mol
+thread: 8,  step: 29000,     T: 78.0,    Energy: 116.982262 kcal/mol
+thread: 0,  step: 26000,     T: 25.0,    Energy: 147.546173 kcal/mol
+thread: 6,  step: 33000,     T: 63.0,    Energy: 150.925156 kcal/mol
+thread: 10,  step: 27000,     T: 94.0,    Energy: 147.716614 kcal/mol
+thread: 7,  step: 26000,     T: 71.0,    Energy: 145.040253 kcal/mol
+thread: 3,  step: 26000,     T: 43.0,    Energy: 111.078896 kcal/mol
+thread: 2,  step: 25000,     T: 37.0,    Energy: 147.914337 kcal/mol
+thread: 9,  step: 27000,     T: 86.0,    Energy: 155.204895 kcal/mol
+thread: 11,  step: 29000,     T:102.0,    Energy: 136.176651 kcal/mol
+thread: 14,  step: 26000,     T:130.0,    Energy: 142.845886 kcal/mol
+thread: 1,  step: 26000,     T: 31.0,    Energy: 125.471626 kcal/mol
+thread: 15,  step: 26000,     T:  0.0,    Energy: 119.378578 kcal/mol
+thread: 4,  step: 30000,     T: 49.0,    Energy: 121.283340 kcal/mol
+thread: 12,  step: 25000,     T:110.0,    Energy: 125.818359 kcal/mol
+thread: 13,  step: 27000,     T:120.0,    Energy: 137.475540 kcal/mol
+thread: 6,  step: 34000,     T: 63.0,    Energy: 153.678711 kcal/mol
+thread: 5,  step: 29000,     T: 55.0,    Energy: 147.512909 kcal/mol
+thread: 9,  step: 28000,     T: 86.0,    Energy: 157.959137 kcal/mol
+thread: 8,  step: 30000,     T: 78.0,    Energy: 116.393692 kcal/mol
+thread: 0,  step: 27000,     T: 25.0,    Energy: 134.495651 kcal/mol
+thread: 11,  step: 30000,     T:102.0,    Energy: 157.927994 kcal/mol
+thread: 10,  step: 28000,     T: 94.0,    Energy: 125.462563 kcal/mol
+thread: 7,  step: 27000,     T: 71.0,    Energy: 150.447922 kcal/mol
+thread: 3,  step: 27000,     T: 43.0,    Energy: 121.759583 kcal/mol
+thread: 2,  step: 26000,     T: 37.0,    Energy: 132.869095 kcal/mol
+thread: 4,  step: 31000,     T: 49.0,    Energy: 131.131058 kcal/mol
+thread: 14,  step: 27000,     T:130.0,    Energy: 130.786819 kcal/mol
+thread: 1,  step: 27000,     T: 31.0,    Energy: 153.590332 kcal/mol
+thread: 6,  step: 35000,     T: 63.0,    Energy: 127.983315 kcal/mol
+thread: 15,  step: 27000,     T:  0.0,    Energy: 128.077820 kcal/mol
+thread: 12,  step: 26000,     T:110.0,    Energy: 127.204590 kcal/mol
+thread: 9,  step: 29000,     T: 86.0,    Energy: 143.322540 kcal/mol
+thread: 11,  step: 31000,     T:102.0,    Energy: 142.154175 kcal/mol
+thread: 13,  step: 28000,     T:120.0,    Energy: 120.417091 kcal/mol
+thread: 5,  step: 30000,     T: 55.0,    Energy: 146.468918 kcal/mol
+thread: 8,  step: 31000,     T: 78.0,    Energy: 137.015335 kcal/mol
+thread: 0,  step: 28000,     T: 25.0,    Energy: 148.200104 kcal/mol
+thread: 4,  step: 32000,     T: 49.0,    Energy: 135.718597 kcal/mol
+thread: 10,  step: 29000,     T: 94.0,    Energy: 133.657425 kcal/mol
+thread: 7,  step: 28000,     T: 71.0,    Energy: 133.555038 kcal/mol
+thread: 3,  step: 28000,     T: 43.0,    Energy: 128.689621 kcal/mol
+thread: 2,  step: 27000,     T: 37.0,    Energy: 130.284988 kcal/mol
+thread: 11,  step: 32000,     T:102.0,    Energy: 127.310905 kcal/mol
+thread: 14,  step: 28000,     T:130.0,    Energy: 129.647903 kcal/mol
+thread: 5,  step: 31000,     T: 55.0,    Energy: 145.537003 kcal/mol
+thread: 1,  step: 28000,     T: 31.0,    Energy: 130.586349 kcal/mol
+thread: 6,  step: 36000,     T: 63.0,    Energy: 134.832413 kcal/mol
+thread: 9,  step: 30000,     T: 86.0,    Energy: 136.328430 kcal/mol
+thread: 12,  step: 27000,     T:110.0,    Energy: 113.910522 kcal/mol
+thread: 8,  step: 32000,     T: 78.0,    Energy: 122.714638 kcal/mol
+thread: 15,  step: 28000,     T:  0.0,    Energy: 123.738800 kcal/mol
+thread: 4,  step: 33000,     T: 49.0,    Energy: 123.204178 kcal/mol
+thread: 13,  step: 29000,     T:120.0,    Energy: 113.084068 kcal/mol
+thread: 0,  step: 29000,     T: 25.0,    Energy: 119.451996 kcal/mol
+thread: 10,  step: 30000,     T: 94.0,    Energy: 135.450867 kcal/mol
+thread: 5,  step: 32000,     T: 55.0,    Energy: 153.465973 kcal/mol
+thread: 7,  step: 29000,     T: 71.0,    Energy: 174.761505 kcal/mol
+thread: 3,  step: 29000,     T: 43.0,    Energy: 130.934799 kcal/mol
+thread: 6,  step: 37000,     T: 63.0,    Energy: 138.958344 kcal/mol
+thread: 2,  step: 28000,     T: 37.0,    Energy: 140.078613 kcal/mol
+thread: 12,  step: 28000,     T:110.0,    Energy: 121.260910 kcal/mol
+thread: 8,  step: 33000,     T: 78.0,    Energy: 125.897720 kcal/mol
+thread: 11,  step: 33000,     T:102.0,    Energy: 127.684677 kcal/mol
+thread: 14,  step: 29000,     T:130.0,    Energy: 145.124725 kcal/mol
+thread: 1,  step: 29000,     T: 31.0,    Energy: 143.242950 kcal/mol
+thread: 9,  step: 31000,     T: 86.0,    Energy: 146.895035 kcal/mol
+thread: 15,  step: 29000,     T:  0.0,    Energy: 135.608612 kcal/mol
+thread: 4,  step: 34000,     T: 49.0,    Energy: 150.641602 kcal/mol
+thread: 13,  step: 30000,     T:120.0,    Energy: 114.309402 kcal/mol
+thread: 5,  step: 33000,     T: 55.0,    Energy: 145.335022 kcal/mol
+thread: 6,  step: 38000,     T: 63.0,    Energy: 134.040894 kcal/mol
+thread: 12,  step: 29000,     T:110.0,    Energy: 138.124771 kcal/mol
+thread: 8,  step: 34000,     T: 78.0,    Energy: 152.725296 kcal/mol
+thread: 0,  step: 30000,     T: 25.0,    Energy: 116.729591 kcal/mol
+thread: 10,  step: 31000,     T: 94.0,    Energy: 126.903030 kcal/mol
+thread: 7,  step: 30000,     T: 71.0,    Energy: 136.680832 kcal/mol
+thread: 3,  step: 30000,     T: 43.0,    Energy: 136.048355 kcal/mol
+thread: 2,  step: 29000,     T: 37.0,    Energy: 140.465714 kcal/mol
+thread: 11,  step: 34000,     T:102.0,    Energy: 131.263092 kcal/mol
+thread: 14,  step: 30000,     T:130.0,    Energy: 128.754105 kcal/mol
+thread: 5,  step: 34000,     T: 55.0,    Energy: 150.198746 kcal/mol
+thread: 1,  step: 30000,     T: 31.0,    Energy: 138.913177 kcal/mol
+thread: 9,  step: 32000,     T: 86.0,    Energy: 123.756668 kcal/mol
+thread: 15,  step: 30000,     T:  0.0,    Energy: 122.502182 kcal/mol
+thread: 12,  step: 30000,     T:110.0,    Energy: 137.287872 kcal/mol
+thread: 8,  step: 35000,     T: 78.0,    Energy: 129.840302 kcal/mol
+thread: 6,  step: 39000,     T: 63.0,    Energy: 121.687119 kcal/mol
+thread: 4,  step: 35000,     T: 49.0,    Energy: 149.826004 kcal/mol
+thread: 13,  step: 31000,     T:120.0,    Energy: 166.050964 kcal/mol
+thread: 0,  step: 31000,     T: 25.0,    Energy: 167.332703 kcal/mol
+thread: 10,  step: 32000,     T: 94.0,    Energy: 152.773193 kcal/mol
+thread: 7,  step: 31000,     T: 71.0,    Energy: 194.368332 kcal/mol
+thread: 5,  step: 35000,     T: 55.0,    Energy: 140.854477 kcal/mol
+thread: 9,  step: 33000,     T: 86.0,    Energy: 176.836731 kcal/mol
+thread: 3,  step: 31000,     T: 43.0,    Energy: 143.498474 kcal/mol
+thread: 2,  step: 30000,     T: 37.0,    Energy: 136.917664 kcal/mol
+thread: 11,  step: 35000,     T:102.0,    Energy: 133.237747 kcal/mol
+thread: 12,  step: 31000,     T:110.0,    Energy: 124.617020 kcal/mol
+thread: 8,  step: 36000,     T: 78.0,    Energy: 150.504852 kcal/mol
+thread: 14,  step: 31000,     T:130.0,    Energy: 144.039108 kcal/mol
+thread: 1,  step: 31000,     T: 31.0,    Energy: 148.375137 kcal/mol
+thread: 15,  step: 31000,     T:  0.0,    Energy: 142.642181 kcal/mol
+thread: 6,  step: 40000,     T: 63.0,    Energy: 127.710594 kcal/mol
+thread: 4,  step: 36000,     T: 49.0,    Energy: 155.384583 kcal/mol
+thread: 13,  step: 32000,     T:120.0,    Energy: 136.151016 kcal/mol
+thread: 9,  step: 34000,     T: 86.0,    Energy: 150.475616 kcal/mol
+thread: 0,  step: 32000,     T: 25.0,    Energy: 158.267761 kcal/mol
+thread: 3,  step: 32000,     T: 43.0,    Energy: 112.361893 kcal/mol
+thread: 12,  step: 32000,     T:110.0,    Energy: 134.123077 kcal/mol
+thread: 8,  step: 37000,     T: 78.0,    Energy: 125.387756 kcal/mol
+thread: 5,  step: 36000,     T: 55.0,    Energy: 153.577682 kcal/mol
+thread: 7,  step: 32000,     T: 71.0,    Energy: 125.425079 kcal/mol
+thread: 10,  step: 33000,     T: 94.0,    Energy: 150.672379 kcal/mol
+thread: 11,  step: 36000,     T:102.0,    Energy: 143.164917 kcal/mol
+thread: 2,  step: 31000,     T: 37.0,    Energy: 147.410736 kcal/mol
+thread: 14,  step: 32000,     T:130.0,    Energy: 143.074005 kcal/mol
+thread: 13,  step: 33000,     T:120.0,    Energy: 128.929504 kcal/mol
+thread: 1,  step: 32000,     T: 31.0,    Energy: 122.132919 kcal/mol
+thread: 15,  step: 32000,     T:  0.0,    Energy: 119.039658 kcal/mol
+thread: 3,  step: 33000,     T: 43.0,    Energy: 159.546524 kcal/mol
+thread: 12,  step: 33000,     T:110.0,    Energy: 132.825714 kcal/mol
+thread: 8,  step: 38000,     T: 78.0,    Energy: 138.372314 kcal/mol
+thread: 6,  step: 41000,     T: 63.0,    Energy: 151.441772 kcal/mol
+thread: 4,  step: 37000,     T: 49.0,    Energy: 140.233582 kcal/mol
+thread: 0,  step: 33000,     T: 25.0,    Energy: 121.939522 kcal/mol
+thread: 9,  step: 35000,     T: 86.0,    Energy: 133.701172 kcal/mol
+thread: 7,  step: 33000,     T: 71.0,    Energy: 152.226318 kcal/mol
+thread: 10,  step: 34000,     T: 94.0,    Energy: 148.168076 kcal/mol
+thread: 5,  step: 37000,     T: 55.0,    Energy: 145.493820 kcal/mol
+thread: 14,  step: 33000,     T:130.0,    Energy: 164.237946 kcal/mol
+thread: 11,  step: 37000,     T:102.0,    Energy: 153.146149 kcal/mol
+thread: 2,  step: 32000,     T: 37.0,    Energy: 138.762756 kcal/mol
+thread: 13,  step: 34000,     T:120.0,    Energy: 123.808456 kcal/mol
+thread: 8,  step: 39000,     T: 78.0,    Energy: 133.663391 kcal/mol
+thread: 12,  step: 34000,     T:110.0,    Energy: 121.023170 kcal/mol
+thread: 6,  step: 42000,     T: 63.0,    Energy: 143.622040 kcal/mol
+thread: 1,  step: 33000,     T: 31.0,    Energy: 136.606415 kcal/mol
+thread: 3,  step: 34000,     T: 43.0,    Energy: 136.283142 kcal/mol
+thread: 15,  step: 33000,     T:  0.0,    Energy: 143.539429 kcal/mol
+thread: 4,  step: 38000,     T: 49.0,    Energy: 130.950745 kcal/mol
+thread: 7,  step: 34000,     T: 71.0,    Energy: 124.794083 kcal/mol
+thread: 0,  step: 34000,     T: 25.0,    Energy: 131.646866 kcal/mol
+thread: 9,  step: 36000,     T: 86.0,    Energy: 134.801651 kcal/mol
+thread: 14,  step: 34000,     T:130.0,    Energy: 139.378967 kcal/mol
+thread: 8,  step: 40000,     T: 78.0,    Energy: 277.800446 kcal/mol
+thread: 10,  step: 35000,     T: 94.0,    Energy: 138.571060 kcal/mol
+thread: 2,  step: 33000,     T: 37.0,    Energy: 211.902161 kcal/mol
+thread: 5,  step: 38000,     T: 55.0,    Energy: 123.771667 kcal/mol
+thread: 6,  step: 43000,     T: 63.0,    Energy: 147.957275 kcal/mol
+thread: 11,  step: 38000,     T:102.0,    Energy: 135.293655 kcal/mol
+thread: 13,  step: 35000,     T:120.0,    Energy: 142.159790 kcal/mol
+thread: 12,  step: 35000,     T:110.0,    Energy: 134.777237 kcal/mol
+thread: 1,  step: 34000,     T: 31.0,    Energy: 141.239334 kcal/mol
+thread: 7,  step: 35000,     T: 71.0,    Energy: 132.561127 kcal/mol
+thread: 4,  step: 39000,     T: 49.0,    Energy: 140.903366 kcal/mol
+thread: 3,  step: 35000,     T: 43.0,    Energy: 135.025589 kcal/mol
+thread: 15,  step: 34000,     T:  0.0,    Energy: 148.157227 kcal/mol
+thread: 8,  step: 41000,     T: 78.0,    Energy: 130.240067 kcal/mol
+thread: 6,  step: 44000,     T: 63.0,    Energy: 127.483101 kcal/mol
+thread: 14,  step: 35000,     T:130.0,    Energy: 125.968994 kcal/mol
+thread: 9,  step: 37000,     T: 86.0,    Energy: 136.531372 kcal/mol
+thread: 0,  step: 35000,     T: 25.0,    Energy: 129.519089 kcal/mol
+thread: 10,  step: 36000,     T: 94.0,    Energy: 134.107803 kcal/mol
+thread: 2,  step: 34000,     T: 37.0,    Energy: 138.853394 kcal/mol
+thread: 5,  step: 39000,     T: 55.0,    Energy: 147.844803 kcal/mol
+thread: 7,  step: 36000,     T: 71.0,    Energy: 131.183609 kcal/mol
+thread: 11,  step: 39000,     T:102.0,    Energy: 142.994171 kcal/mol
+thread: 4,  step: 40000,     T: 49.0,    Energy: 133.828415 kcal/mol
+thread: 13,  step: 36000,     T:120.0,    Energy: 128.508286 kcal/mol
+thread: 12,  step: 36000,     T:110.0,    Energy: 158.928162 kcal/mol
+thread: 6,  step: 45000,     T: 63.0,    Energy: 130.611588 kcal/mol
+thread: 1,  step: 35000,     T: 31.0,    Energy: 171.920959 kcal/mol
+thread: 8,  step: 42000,     T: 78.0,    Energy: 133.616547 kcal/mol
+thread: 3,  step: 36000,     T: 43.0,    Energy: 133.131439 kcal/mol
+thread: 15,  step: 35000,     T:  0.0,    Energy: 152.666687 kcal/mol
+thread: 0,  step: 36000,     T: 25.0,    Energy: 142.847244 kcal/mol
+thread: 9,  step: 38000,     T: 86.0,    Energy: 143.302155 kcal/mol
+thread: 14,  step: 36000,     T:130.0,    Energy: 152.234772 kcal/mol
+thread: 10,  step: 37000,     T: 94.0,    Energy: 125.953430 kcal/mol
+thread: 7,  step: 37000,     T: 71.0,    Energy: 142.659576 kcal/mol
+thread: 2,  step: 35000,     T: 37.0,    Energy: 135.642807 kcal/mol
+thread: 5,  step: 40000,     T: 55.0,    Energy: 133.080688 kcal/mol
+thread: 4,  step: 41000,     T: 49.0,    Energy: 144.623444 kcal/mol
+thread: 6,  step: 46000,     T: 63.0,    Energy: 164.814758 kcal/mol
+thread: 12,  step: 37000,     T:110.0,    Energy: 128.968185 kcal/mol
+thread: 11,  step: 40000,     T:102.0,    Energy: 135.854721 kcal/mol
+thread: 3,  step: 37000,     T: 43.0,    Energy: 144.426559 kcal/mol
+thread: 13,  step: 37000,     T:120.0,    Energy: 129.731125 kcal/mol
+thread: 1,  step: 36000,     T: 31.0,    Energy: 151.145844 kcal/mol
+thread: 8,  step: 43000,     T: 78.0,    Energy: 143.321167 kcal/mol
+thread: 0,  step: 37000,     T: 25.0,    Energy: 125.703255 kcal/mol
+thread: 15,  step: 36000,     T:  0.0,    Energy: 141.910248 kcal/mol
+thread: 9,  step: 39000,     T: 86.0,    Energy: 160.069519 kcal/mol
+thread: 14,  step: 37000,     T:130.0,    Energy: 136.874191 kcal/mol
+thread: 4,  step: 42000,     T: 49.0,    Energy: 124.340408 kcal/mol
+thread: 6,  step: 47000,     T: 63.0,    Energy: 144.671982 kcal/mol
+thread: 12,  step: 38000,     T:110.0,    Energy: 122.032242 kcal/mol
+thread: 3,  step: 38000,     T: 43.0,    Energy: 134.569839 kcal/mol
+thread: 10,  step: 38000,     T: 94.0,    Energy: 148.665329 kcal/mol
+thread: 7,  step: 38000,     T: 71.0,    Energy: 126.239037 kcal/mol
+thread: 2,  step: 36000,     T: 37.0,    Energy: 136.126541 kcal/mol
+thread: 5,  step: 41000,     T: 55.0,    Energy: 146.109802 kcal/mol
+thread: 11,  step: 41000,     T:102.0,    Energy: 137.739304 kcal/mol
+thread: 13,  step: 38000,     T:120.0,    Energy: 131.078888 kcal/mol
+thread: 1,  step: 37000,     T: 31.0,    Energy: 132.966248 kcal/mol
+thread: 8,  step: 44000,     T: 78.0,    Energy: 134.235809 kcal/mol
+thread: 4,  step: 43000,     T: 49.0,    Energy: 160.303223 kcal/mol
+thread: 12,  step: 39000,     T:110.0,    Energy: 135.012314 kcal/mol
+thread: 3,  step: 39000,     T: 43.0,    Energy: 139.261871 kcal/mol
+thread: 0,  step: 38000,     T: 25.0,    Energy: 134.906219 kcal/mol
+thread: 15,  step: 37000,     T:  0.0,    Energy: 160.362686 kcal/mol
+thread: 9,  step: 40000,     T: 86.0,    Energy: 133.971695 kcal/mol
+thread: 6,  step: 48000,     T: 63.0,    Energy: 141.781403 kcal/mol
+thread: 14,  step: 38000,     T:130.0,    Energy: 144.737549 kcal/mol
+thread: 2,  step: 37000,     T: 37.0,    Energy: 145.062103 kcal/mol
+thread: 5,  step: 42000,     T: 55.0,    Energy: 162.290756 kcal/mol
+thread: 10,  step: 39000,     T: 94.0,    Energy: 108.375648 kcal/mol
+thread: 7,  step: 39000,     T: 71.0,    Energy: 134.317322 kcal/mol
+thread: 13,  step: 39000,     T:120.0,    Energy: 126.883720 kcal/mol
+thread: 11,  step: 42000,     T:102.0,    Energy: 119.339745 kcal/mol
+thread: 3,  step: 40000,     T: 43.0,    Energy: 114.422966 kcal/mol
+thread: 1,  step: 38000,     T: 31.0,    Energy: 141.329544 kcal/mol
+thread: 8,  step: 45000,     T: 78.0,    Energy: 121.365257 kcal/mol
+thread: 4,  step: 44000,     T: 49.0,    Energy: 219.842834 kcal/mol
+thread: 0,  step: 39000,     T: 25.0,    Energy: 130.844971 kcal/mol
+thread: 2,  step: 38000,     T: 37.0,    Energy: 141.213821 kcal/mol
+thread: 12,  step: 40000,     T:110.0,    Energy: 209.022034 kcal/mol
+thread: 5,  step: 43000,     T: 55.0,    Energy: 126.117126 kcal/mol
+thread: 9,  step: 41000,     T: 86.0,    Energy: 147.351486 kcal/mol
+thread: 15,  step: 38000,     T:  0.0,    Energy: 164.042816 kcal/mol
+thread: 6,  step: 49000,     T: 63.0,    Energy: 136.896912 kcal/mol
+thread: 14,  step: 39000,     T:130.0,    Energy: 142.116806 kcal/mol
+thread: 13,  step: 40000,     T:120.0,    Energy: 135.990707 kcal/mol
+thread: 10,  step: 40000,     T: 94.0,    Energy: 140.669556 kcal/mol
+thread: 3,  step: 41000,     T: 43.0,    Energy: 122.109688 kcal/mol
+thread: 7,  step: 40000,     T: 71.0,    Energy: 129.067261 kcal/mol
+thread: 11,  step: 43000,     T:102.0,    Energy: 135.634750 kcal/mol
+thread: 8,  step: 46000,     T: 78.0,    Energy: 146.145126 kcal/mol
+thread: 2,  step: 39000,     T: 37.0,    Energy: 151.162003 kcal/mol
+thread: 1,  step: 39000,     T: 31.0,    Energy: 147.316925 kcal/mol
+thread: 13,  step: 41000,     T:120.0,    Energy: 132.616104 kcal/mol
+thread: 0,  step: 40000,     T: 25.0,    Energy: 138.258728 kcal/mol
+thread: 4,  step: 45000,     T: 49.0,    Energy: 139.189072 kcal/mol
+thread: 12,  step: 41000,     T:110.0,    Energy: 149.719101 kcal/mol
+thread: 5,  step: 44000,     T: 55.0,    Energy: 155.298615 kcal/mol
+thread: 15,  step: 39000,     T:  0.0,    Energy: 150.607834 kcal/mol
+thread: 9,  step: 42000,     T: 86.0,    Energy: 125.358543 kcal/mol
+thread: 3,  step: 42000,     T: 43.0,    Energy: 129.914978 kcal/mol
+thread: 14,  step: 40000,     T:130.0,    Energy: 140.367569 kcal/mol
+thread: 6,  step: 50000,     T: 63.0,    Energy: 128.369751 kcal/mol
+thread: 8,  step: 47000,     T: 78.0,    Energy: 130.071594 kcal/mol
+thread: 2,  step: 40000,     T: 37.0,    Energy: 137.376785 kcal/mol
+thread: 10,  step: 41000,     T: 94.0,    Energy: 135.259354 kcal/mol
+thread: 7,  step: 41000,     T: 71.0,    Energy: 131.026016 kcal/mol
+thread: 11,  step: 44000,     T:102.0,    Energy: 143.974091 kcal/mol
+thread: 13,  step: 42000,     T:120.0,    Energy: 138.073013 kcal/mol
+thread: 1,  step: 40000,     T: 31.0,    Energy: 120.369774 kcal/mol
+thread: 5,  step: 45000,     T: 55.0,    Energy: 168.319809 kcal/mol
+thread: 3,  step: 43000,     T: 43.0,    Energy: 135.646057 kcal/mol
+thread: 0,  step: 41000,     T: 25.0,    Energy: 138.471130 kcal/mol
+thread: 4,  step: 46000,     T: 49.0,    Energy: 139.438614 kcal/mol
+thread: 8,  step: 48000,     T: 78.0,    Energy: 115.596291 kcal/mol
+thread: 12,  step: 42000,     T:110.0,    Energy: 159.868378 kcal/mol
+thread: 2,  step: 41000,     T: 37.0,    Energy: 145.005997 kcal/mol
+thread: 15,  step: 40000,     T:  0.0,    Energy: 153.520462 kcal/mol
+thread: 14,  step: 41000,     T:130.0,    Energy: 124.203201 kcal/mol
+thread: 9,  step: 43000,     T: 86.0,    Energy: 124.534828 kcal/mol
+thread: 11,  step: 45000,     T:102.0,    Energy: 131.754730 kcal/mol
+thread: 13,  step: 43000,     T:120.0,    Energy: 138.714218 kcal/mol
+thread: 10,  step: 42000,     T: 94.0,    Energy: 117.065201 kcal/mol
+thread: 3,  step: 44000,     T: 43.0,    Energy: 119.740318 kcal/mol
+thread: 7,  step: 42000,     T: 71.0,    Energy: 120.246658 kcal/mol
+thread: 8,  step: 49000,     T: 78.0,    Energy: 123.421753 kcal/mol
+thread: 5,  step: 46000,     T: 55.0,    Energy: 151.045059 kcal/mol
+thread: 1,  step: 41000,     T: 31.0,    Energy: 129.216827 kcal/mol
+thread: 14,  step: 42000,     T:130.0,    Energy: 147.206528 kcal/mol
+thread: 2,  step: 42000,     T: 37.0,    Energy: 135.505890 kcal/mol
+thread: 0,  step: 42000,     T: 25.0,    Energy: 151.110275 kcal/mol
+thread: 4,  step: 47000,     T: 49.0,    Energy: 157.203140 kcal/mol
+thread: 12,  step: 43000,     T:110.0,    Energy: 124.843864 kcal/mol
+thread: 11,  step: 46000,     T:102.0,    Energy: 122.985733 kcal/mol
+thread: 10,  step: 43000,     T: 94.0,    Energy: 154.346588 kcal/mol
+thread: 15,  step: 41000,     T:  0.0,    Energy: 146.977386 kcal/mol
+thread: 9,  step: 44000,     T: 86.0,    Energy: 143.015961 kcal/mol
+thread: 3,  step: 45000,     T: 43.0,    Energy: 135.281479 kcal/mol
+thread: 13,  step: 44000,     T:120.0,    Energy: 145.953110 kcal/mol
+thread: 8,  step: 50000,     T: 78.0,    Energy: 113.621109 kcal/mol
+thread: 14,  step: 43000,     T:130.0,    Energy: 139.987732 kcal/mol
+thread: 5,  step: 47000,     T: 55.0,    Energy: 145.486786 kcal/mol
+thread: 7,  step: 43000,     T: 71.0,    Energy: 121.117645 kcal/mol
+thread: 2,  step: 43000,     T: 37.0,    Energy: 139.652023 kcal/mol
+thread: 1,  step: 42000,     T: 31.0,    Energy: 155.143646 kcal/mol
+thread: 0,  step: 43000,     T: 25.0,    Energy: 134.571198 kcal/mol
+thread: 10,  step: 44000,     T: 94.0,    Energy: 123.254196 kcal/mol
+thread: 15,  step: 42000,     T:  0.0,    Energy: 134.950211 kcal/mol
+thread: 4,  step: 48000,     T: 49.0,    Energy: 152.208405 kcal/mol
+thread: 9,  step: 45000,     T: 86.0,    Energy: 141.942352 kcal/mol
+thread: 11,  step: 47000,     T:102.0,    Energy: 133.025208 kcal/mol
+thread: 13,  step: 45000,     T:120.0,    Energy: 123.695435 kcal/mol
+thread: 12,  step: 44000,     T:110.0,    Energy: 135.254333 kcal/mol
+thread: 5,  step: 48000,     T: 55.0,    Energy: 135.157990 kcal/mol
+thread: 14,  step: 44000,     T:130.0,    Energy: 151.237213 kcal/mol
+thread: 3,  step: 46000,     T: 43.0,    Energy: 135.654907 kcal/mol
+thread: 2,  step: 44000,     T: 37.0,    Energy: 133.753632 kcal/mol
+thread: 0,  step: 44000,     T: 25.0,    Energy: 135.988022 kcal/mol
+thread: 7,  step: 44000,     T: 71.0,    Energy: 129.533585 kcal/mol
+thread: 9,  step: 46000,     T: 86.0,    Energy: 129.426926 kcal/mol
+thread: 11,  step: 48000,     T:102.0,    Energy: 147.392609 kcal/mol
+thread: 13,  step: 46000,     T:120.0,    Energy: 123.055992 kcal/mol
+thread: 1,  step: 43000,     T: 31.0,    Energy: 159.090973 kcal/mol
+thread: 10,  step: 45000,     T: 94.0,    Energy: 142.351898 kcal/mol
+thread: 5,  step: 49000,     T: 55.0,    Energy: 131.311371 kcal/mol
+thread: 15,  step: 43000,     T:  0.0,    Energy: 175.494614 kcal/mol
+thread: 4,  step: 49000,     T: 49.0,    Energy: 129.318192 kcal/mol
+thread: 2,  step: 45000,     T: 37.0,    Energy: 135.700256 kcal/mol
+thread: 12,  step: 45000,     T:110.0,    Energy: 122.411568 kcal/mol
+thread: 0,  step: 45000,     T: 25.0,    Energy: 138.530807 kcal/mol
+thread: 14,  step: 45000,     T:130.0,    Energy: 132.791290 kcal/mol
+thread: 3,  step: 47000,     T: 43.0,    Energy: 135.236084 kcal/mol
+thread: 9,  step: 47000,     T: 86.0,    Energy: 118.984680 kcal/mol
+thread: 7,  step: 45000,     T: 71.0,    Energy: 121.714821 kcal/mol
+thread: 13,  step: 47000,     T:120.0,    Energy: 139.713089 kcal/mol
+thread: 5,  step: 50000,     T: 55.0,    Energy: 146.157806 kcal/mol
+thread: 11,  step: 49000,     T:102.0,    Energy: 120.921524 kcal/mol
+thread: 2,  step: 46000,     T: 37.0,    Energy: 150.233673 kcal/mol
+thread: 1,  step: 44000,     T: 31.0,    Energy: 156.677429 kcal/mol
+thread: 0,  step: 46000,     T: 25.0,    Energy: 145.113754 kcal/mol
+thread: 10,  step: 46000,     T: 94.0,    Energy: 134.647446 kcal/mol
+thread: 12,  step: 46000,     T:110.0,    Energy: 123.815712 kcal/mol
+thread: 15,  step: 44000,     T:  0.0,    Energy: 138.073624 kcal/mol
+thread: 14,  step: 46000,     T:130.0,    Energy: 130.382996 kcal/mol
+thread: 4,  step: 50000,     T: 49.0,    Energy: 154.434189 kcal/mol
+thread: 7,  step: 46000,     T: 71.0,    Energy: 118.632225 kcal/mol
+thread: 9,  step: 48000,     T: 86.0,    Energy: 135.970474 kcal/mol
+thread: 13,  step: 48000,     T:120.0,    Energy: 136.124954 kcal/mol
+thread: 3,  step: 48000,     T: 43.0,    Energy: 135.755798 kcal/mol
+thread: 2,  step: 47000,     T: 37.0,    Energy: 149.234161 kcal/mol
+thread: 0,  step: 47000,     T: 25.0,    Energy: 131.516098 kcal/mol
+thread: 12,  step: 47000,     T:110.0,    Energy: 143.440002 kcal/mol
+thread: 1,  step: 45000,     T: 31.0,    Energy: 153.167938 kcal/mol
+thread: 11,  step: 50000,     T:102.0,    Energy: 151.800980 kcal/mol
+thread: 14,  step: 47000,     T:130.0,    Energy: 201.131668 kcal/mol
+thread: 7,  step: 47000,     T: 71.0,    Energy: 128.911911 kcal/mol
+thread: 9,  step: 49000,     T: 86.0,    Energy: 154.608536 kcal/mol
+thread: 13,  step: 49000,     T:120.0,    Energy: 126.194000 kcal/mol
+thread: 10,  step: 47000,     T: 94.0,    Energy: 129.838776 kcal/mol
+thread: 15,  step: 45000,     T:  0.0,    Energy: 160.439575 kcal/mol
+thread: 2,  step: 48000,     T: 37.0,    Energy: 140.729858 kcal/mol
+thread: 12,  step: 48000,     T:110.0,    Energy: 134.831177 kcal/mol
+thread: 0,  step: 48000,     T: 25.0,    Energy: 147.545013 kcal/mol
+thread: 1,  step: 46000,     T: 31.0,    Energy: 144.891052 kcal/mol
+thread: 14,  step: 48000,     T:130.0,    Energy: 115.855766 kcal/mol
+thread: 3,  step: 49000,     T: 43.0,    Energy: 135.137970 kcal/mol
+thread: 7,  step: 48000,     T: 71.0,    Energy: 151.702118 kcal/mol
+thread: 9,  step: 50000,     T: 86.0,    Energy: 115.042915 kcal/mol
+thread: 13,  step: 50000,     T:120.0,    Energy: 129.133560 kcal/mol
+thread: 10,  step: 48000,     T: 94.0,    Energy: 123.916748 kcal/mol
+thread: 2,  step: 49000,     T: 37.0,    Energy: 152.094620 kcal/mol
+thread: 15,  step: 46000,     T:  0.0,    Energy: 168.363510 kcal/mol
+thread: 12,  step: 49000,     T:110.0,    Energy: 169.874161 kcal/mol
+thread: 0,  step: 49000,     T: 25.0,    Energy: 151.522247 kcal/mol
+thread: 1,  step: 47000,     T: 31.0,    Energy: 121.902962 kcal/mol
+thread: 14,  step: 49000,     T:130.0,    Energy: 134.839523 kcal/mol
+thread: 7,  step: 49000,     T: 71.0,    Energy: 154.639893 kcal/mol
+thread: 3,  step: 50000,     T: 43.0,    Energy: 124.659241 kcal/mol
+thread: 10,  step: 49000,     T: 94.0,    Energy: 131.419800 kcal/mol
+thread: 2,  step: 50000,     T: 37.0,    Energy: 158.345047 kcal/mol
+thread: 12,  step: 50000,     T:110.0,    Energy: 135.413559 kcal/mol
+thread: 15,  step: 47000,     T:  0.0,    Energy: 155.875931 kcal/mol
+thread: 0,  step: 50000,     T: 25.0,    Energy: 133.115204 kcal/mol
+thread: 1,  step: 48000,     T: 31.0,    Energy: 127.709244 kcal/mol
+thread: 14,  step: 50000,     T:130.0,    Energy: 127.833008 kcal/mol
+thread: 7,  step: 50000,     T: 71.0,    Energy: 128.186249 kcal/mol
+thread: 10,  step: 50000,     T: 94.0,    Energy: 146.802963 kcal/mol
+thread: 15,  step: 48000,     T:  0.0,    Energy: 144.865097 kcal/mol
+thread: 1,  step: 49000,     T: 31.0,    Energy: 126.188889 kcal/mol
+thread: 15,  step: 49000,     T:  0.0,    Energy: 140.818619 kcal/mol
+thread: 1,  step: 50000,     T: 31.0,    Energy: 157.480392 kcal/mol
+thread: 15,  step: 50000,     T:  0.0,    Energy: 139.634689 kcal/mol

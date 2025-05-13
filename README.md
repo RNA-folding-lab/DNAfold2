@@ -18,3 +18,21 @@ This package was developed to predict 3D structure and stability for complex DNA
 2. Run Simulation
    * bash run.sh
 3. Output Files
+   * Results are stored in the results/ directory. Key subdirectories:
+     * Folding_trajectory/: Trajectories at different temperatures.
+     * CG_structures/: Predicted coarse-grained 3D structures.
+     * Secondary_structure/: Top-N secondary structures in dot-bracket notation.
+     * All_atom_structure/: All-atom models converted from CG predictions.
+     * Thermal_Stability/:
+         * thermal_stability.dat: Population fractions of Folded/Unfolded/Intermediate states across temperatures.
+         * Secondary_sec_x.dat: Dot-bracket structures at different temperatures.   
+4. Recommended Settings
+   * For 3D structure prediction:
+     * Folding steps: ≥ 750,000 (minimum 500,000)
+     * Optimizing steps: ≥ 500,000 (minimum 100,000)
+   * For thermal stability prediction:
+     * Folding steps: ≥ 4,000,000 (minimum 2,000,000)
+     * To compute melting temperature (Tm), fit the folded/unfolded fractions to a two-state model as in references [1–2].
+## References
+1. Z.-C. Mu, Y.-L. Tan, B.-G. Zhang, J. Liu, Y.-Z. Shi. Ab initio predictions for 3D structure and stability of single- and double-stranded DNAs in ion solutions. PLoS Comput. Biol. 18, e1010501 (2022).
+2. X. Wang, Y.-Z. Shi. 3D structure and stability prediction of DNA with multi-way junctions in ionic solutions. arXiv:2501.11891 

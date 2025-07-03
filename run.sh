@@ -9,7 +9,7 @@ cp seq.dat folder/initial
 cp config.dat folder
 cd folder
 python config.py
-g++ main.c
+##g++ main.c
 ./a.out
 #rm -rf model secondary optimize
 cd ..

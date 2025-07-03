@@ -1,0 +1,576 @@
+HEADER    DNA                                     28-MAR-02   1LA8              
+TITLE     SOLUTION STRUCTURE OF THE DNA HAIRPIN 13-MER CGCGGTGTCCGCG            
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: 5'-D(*CP*GP*CP*GP*GP*TP*GP*TP*CP*CP*GP*CP*G)-3';           
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 SYNTHETIC: YES;                                                      
+SOURCE   3 OTHER_DETAILS: THIS SYNTHETIC DNA SEQUENCE WAS DERIVED FROM THE      
+SOURCE   4 HISD3052 GENE OF SALMONELLA TYPHIMURIUM.                             
+KEYWDS    DNA, HAIRPIN, THREE BASE LOOP                                         
+EXPDTA    SOLUTION NMR                                                          
+MDLTYP    MINIMIZED AVERAGE                                                     
+AUTHOR    J.P.WEISENSEEL,G.R.REDDY,L.J.MARNETT,M.P.STONE                        
+REVDAT   4   22-MAY-24 1LA8    1       REMARK                                   
+REVDAT   3   23-FEB-22 1LA8    1       REMARK                                   
+REVDAT   2   24-FEB-09 1LA8    1       VERSN                                    
+REVDAT   1   17-APR-02 1LA8    0                                                
+JRNL        AUTH   J.P.WEISENSEEL,G.R.REDDY,L.J.MARNETT,M.P.STONE               
+JRNL        TITL   STRUCTURE OF THE 1,N(2)-PROPANODEOXYGUANOSINE ADDUCT IN A    
+JRNL        TITL 2 THREE-BASE DNA HAIRPIN LOOP DERIVED FROM A PALINDROME IN THE 
+JRNL        TITL 3 SALMONELLA TYPHIMURIUM HISD3052 GENE.                        
+JRNL        REF    CHEM.RES.TOXICOL.             V.  15   140 2002              
+JRNL        REFN                   ISSN 0893-228X                               
+JRNL        PMID   11849039                                                     
+JRNL        DOI    10.1021/TX010107F                                            
+REMARK   2                                                                      
+REMARK   2 RESOLUTION. NOT APPLICABLE.                                          
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : UXNMR 3.0, X-PLOR 3.8                                
+REMARK   3   AUTHORS     : BRUKER (UXNMR), BRUNGER (X-PLOR)                     
+REMARK   3                                                                      
+REMARK   3  OTHER REFINEMENT REMARKS: NULL                                      
+REMARK   4                                                                      
+REMARK   4 1LA8 COMPLIES WITH FORMAT V. 3.30, 13-JUL-11                         
+REMARK 100                                                                      
+REMARK 100 THIS ENTRY HAS BEEN PROCESSED BY RCSB ON 29-MAR-02.                  
+REMARK 100 THE DEPOSITION ID IS D_1000015790.                                   
+REMARK 210                                                                      
+REMARK 210 EXPERIMENTAL DETAILS                                                 
+REMARK 210  EXPERIMENT TYPE                : NMR                                
+REMARK 210  TEMPERATURE           (KELVIN) : 303; 278                           
+REMARK 210  PH                             : 6.8; 6.8                           
+REMARK 210  IONIC STRENGTH                 : 100 MM NACL; 100 MM NACL           
+REMARK 210  PRESSURE                       : AMBIENT; AMBIENT                   
+REMARK 210  SAMPLE CONTENTS                : 1.8 MM DNA, 10 MM SODIUM           
+REMARK 210                                   PHOSPHATE, 100 MM NACL, 50 UM      
+REMARK 210                                   EDTA; 1.8 MM DNA, 1 MM SODIUM      
+REMARK 210                                   PHOSPHATE, 100 MM NACL, 50 UM      
+REMARK 210                                   EDTA                               
+REMARK 210                                                                      
+REMARK 210  NMR EXPERIMENTS CONDUCTED      : 2D NOESY; DQF-COSY; 31P-1H COSY    
+REMARK 210  SPECTROMETER FIELD STRENGTH    : 500 MHZ                            
+REMARK 210  SPECTROMETER MODEL             : DRX                                
+REMARK 210  SPECTROMETER MANUFACTURER      : BRUKER                             
+REMARK 210                                                                      
+REMARK 210  STRUCTURE DETERMINATION.                                            
+REMARK 210   SOFTWARE USED                 : FELIX 97.0, 2000, MARDIGRAS 3.2    
+REMARK 210   METHOD USED                   : MOLECULAR DYNAMICS USING A         
+REMARK 210                                   SIMULATED ANNEALING PROTOCOL       
+REMARK 210                                                                      
+REMARK 210 CONFORMERS, NUMBER CALCULATED   : NULL                               
+REMARK 210 CONFORMERS, NUMBER SUBMITTED    : 1                                  
+REMARK 210 CONFORMERS, SELECTION CRITERIA  : NULL                               
+REMARK 210                                                                      
+REMARK 210 BEST REPRESENTATIVE CONFORMER IN THIS ENSEMBLE : 1                   
+REMARK 210                                                                      
+REMARK 210 REMARK: NULL                                                         
+REMARK 215                                                                      
+REMARK 215 NMR STUDY                                                            
+REMARK 215 THE COORDINATES IN THIS ENTRY WERE GENERATED FROM SOLUTION           
+REMARK 215 NMR DATA.  PROTEIN DATA BANK CONVENTIONS REQUIRE THAT                
+REMARK 215 CRYST1 AND SCALE RECORDS BE INCLUDED, BUT THE VALUES ON              
+REMARK 215 THESE RECORDS ARE MEANINGLESS.                                       
+REMARK 300                                                                      
+REMARK 300 BIOMOLECULE: 1                                                       
+REMARK 300 SEE REMARK 350 FOR THE AUTHOR PROVIDED AND/OR PROGRAM                
+REMARK 300 GENERATED ASSEMBLY INFORMATION FOR THE STRUCTURE IN                  
+REMARK 300 THIS ENTRY. THE REMARK MAY ALSO PROVIDE INFORMATION ON               
+REMARK 300 BURIED SURFACE AREA.                                                 
+REMARK 350                                                                      
+REMARK 350 COORDINATES FOR A COMPLETE MULTIMER REPRESENTING THE KNOWN           
+REMARK 350 BIOLOGICALLY SIGNIFICANT OLIGOMERIZATION STATE OF THE                
+REMARK 350 MOLECULE CAN BE GENERATED BY APPLYING BIOMT TRANSFORMATIONS          
+REMARK 350 GIVEN BELOW.  BOTH NON-CRYSTALLOGRAPHIC AND                          
+REMARK 350 CRYSTALLOGRAPHIC OPERATIONS ARE GIVEN.                               
+REMARK 350                                                                      
+REMARK 350 BIOMOLECULE: 1                                                       
+REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: MONOMERIC                         
+REMARK 350 APPLY THE FOLLOWING TO CHAINS: A                                     
+REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000            
+REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000            
+REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000            
+REMARK 500                                                                      
+REMARK 500 GEOMETRY AND STEREOCHEMISTRY                                         
+REMARK 500 SUBTOPIC: COVALENT BOND ANGLES                                       
+REMARK 500                                                                      
+REMARK 500 THE STEREOCHEMICAL PARAMETERS OF THE FOLLOWING RESIDUES              
+REMARK 500 HAVE VALUES WHICH DEVIATE FROM EXPECTED VALUES BY MORE               
+REMARK 500 THAN 6*RMSD (M=MODEL NUMBER; RES=RESIDUE NAME; C=CHAIN               
+REMARK 500 IDENTIFIER; SSEQ=SEQUENCE NUMBER; I=INSERTION CODE).                 
+REMARK 500                                                                      
+REMARK 500 STANDARD TABLE:                                                      
+REMARK 500 FORMAT: (10X,I3,1X,A3,1X,A1,I4,A1,3(1X,A4,2X),12X,F5.1)              
+REMARK 500                                                                      
+REMARK 500 EXPECTED VALUES PROTEIN: ENGH AND HUBER, 1999                        
+REMARK 500 EXPECTED VALUES NUCLEIC ACID: CLOWNEY ET AL 1996                     
+REMARK 500                                                                      
+REMARK 500  M RES CSSEQI ATM1   ATM2   ATM3                                     
+REMARK 500     DC A   1   O4' -  C1' -  N1  ANGL. DEV. =   3.7 DEGREES          
+REMARK 500     DG A   2   O4' -  C1' -  N9  ANGL. DEV. =   3.0 DEGREES          
+REMARK 500     DG A   2   N7  -  C8  -  N9  ANGL. DEV. =   4.6 DEGREES          
+REMARK 500     DG A   2   C8  -  N9  -  C4  ANGL. DEV. =  -2.5 DEGREES          
+REMARK 500     DC A   3   O4' -  C1' -  N1  ANGL. DEV. =   2.7 DEGREES          
+REMARK 500     DG A   4   O4' -  C1' -  N9  ANGL. DEV. =   2.8 DEGREES          
+REMARK 500     DG A   4   N7  -  C8  -  N9  ANGL. DEV. =   4.4 DEGREES          
+REMARK 500     DG A   4   C8  -  N9  -  C4  ANGL. DEV. =  -2.5 DEGREES          
+REMARK 500     DG A   5   O4' -  C1' -  N9  ANGL. DEV. =   2.2 DEGREES          
+REMARK 500     DG A   5   N7  -  C8  -  N9  ANGL. DEV. =   5.3 DEGREES          
+REMARK 500     DG A   5   C8  -  N9  -  C4  ANGL. DEV. =  -2.5 DEGREES          
+REMARK 500     DT A   6   O4' -  C1' -  N1  ANGL. DEV. =   4.6 DEGREES          
+REMARK 500     DG A   7   O4' -  C1' -  N9  ANGL. DEV. =   5.5 DEGREES          
+REMARK 500     DG A   7   N7  -  C8  -  N9  ANGL. DEV. =   4.5 DEGREES          
+REMARK 500     DG A   7   C8  -  N9  -  C4  ANGL. DEV. =  -2.6 DEGREES          
+REMARK 500     DT A   8   O4' -  C1' -  N1  ANGL. DEV. =   3.8 DEGREES          
+REMARK 500     DC A   9   O4' -  C1' -  N1  ANGL. DEV. =   2.8 DEGREES          
+REMARK 500     DC A  10   O4' -  C1' -  N1  ANGL. DEV. =   3.2 DEGREES          
+REMARK 500     DG A  11   O4' -  C1' -  N9  ANGL. DEV. =   3.3 DEGREES          
+REMARK 500     DG A  11   N7  -  C8  -  N9  ANGL. DEV. =   4.7 DEGREES          
+REMARK 500     DG A  11   C8  -  N9  -  C4  ANGL. DEV. =  -2.5 DEGREES          
+REMARK 500     DC A  12   O4' -  C1' -  N1  ANGL. DEV. =   2.6 DEGREES          
+REMARK 500     DG A  13   O4' -  C1' -  N9  ANGL. DEV. =   3.5 DEGREES          
+REMARK 500     DG A  13   N7  -  C8  -  N9  ANGL. DEV. =   4.5 DEGREES          
+REMARK 500     DG A  13   C8  -  N9  -  C4  ANGL. DEV. =  -2.9 DEGREES          
+REMARK 500                                                                      
+REMARK 500 REMARK: NULL                                                         
+REMARK 900                                                                      
+REMARK 900 RELATED ENTRIES                                                      
+REMARK 900 RELATED ID: 1LAE   RELATED DB: PDB                                   
+REMARK 900 1LAE IS THE SOLUTION STRUCTURE OF THE 13-MER DNA HAIRPIN             
+REMARK 900 CGCGGTXTCCGCG (X=PDG) CONTAINING THE 1,N2-PROPANODEOXYGUANOSINE      
+REMARK 900 ADDUCT.                                                              
+REMARK 900 RELATED ID: 1LAI   RELATED DB: PDB                                   
+REMARK 900 1LAI IS THE SOLUTION STRUCTURE OF THE B-DNA DUPLEX CGCGGTGTCCGCG.    
+REMARK 900 RELATED ID: 1LAQ   RELATED DB: PDB                                   
+REMARK 900 1LAQ IS THE SOLUTION STRUCTURE OF THE B-DNA DUPLEX CGCGGTXTCCGCG (X= 
+REMARK 900 PDG) CONTAINING THE 1,N2-PROPANOGEOXYGUANOSINE ADDUCT WITH THE       
+REMARK 900 DEOXYRIBOSE AT C20 OPPOSITE PDG IN THE C2' ENDO CONFORMATION.        
+REMARK 900 RELATED ID: 1LAS   RELATED DB: PDB                                   
+REMARK 900 1LAS IS THE SOLUTION STRUCTURE OF THE B-DNA DUPLEX CGCGGTXTCCGCG (X= 
+REMARK 900 PDG) CONTAINING THE 1,N2-PROPANOGEOXYGUANOSINE ADDUCT WITH THE       
+REMARK 900 DEOXYRIBOSE AT C20 OPPOSITE PDG IN THE C3' ENDO CONFORMATION.        
+DBREF  1LA8 A    1    13  PDB    1LA8     1LA8             1     13             
+SEQRES   1 A   13   DC  DG  DC  DG  DG  DT  DG  DT  DC  DC  DG  DC  DG          
+CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1          
+ORIGX1      1.000000  0.000000  0.000000        0.00000                         
+ORIGX2      0.000000  1.000000  0.000000        0.00000                         
+ORIGX3      0.000000  0.000000  1.000000        0.00000                         
+SCALE1      1.000000  0.000000  0.000000        0.00000                         
+SCALE2      0.000000  1.000000  0.000000        0.00000                         
+SCALE3      0.000000  0.000000  1.000000        0.00000                         
+ATOM      1  O5'  DC A   1      -2.747 -16.786  12.361  1.00  0.29           O  
+ATOM      2  C5'  DC A   1      -1.561 -17.470  11.945  1.00  0.29           C  
+ATOM      3  C4'  DC A   1      -0.453 -16.491  11.562  1.00  0.24           C  
+ATOM      4  O4'  DC A   1      -0.885 -15.612  10.487  1.00  0.24           O  
+ATOM      5  C3'  DC A   1      -0.077 -15.600  12.739  1.00  0.19           C  
+ATOM      6  O3'  DC A   1       1.341 -15.382  12.799  1.00  0.17           O  
+ATOM      7  C2'  DC A   1      -0.805 -14.321  12.463  1.00  0.16           C  
+ATOM      8  C1'  DC A   1      -0.863 -14.242  10.955  1.00  0.18           C  
+ATOM      9  N1   DC A   1      -2.052 -13.485  10.507  1.00  0.19           N  
+ATOM     10  C2   DC A   1      -1.831 -12.276   9.863  1.00  0.19           C  
+ATOM     11  O2   DC A   1      -0.683 -11.876   9.672  1.00  0.19           O  
+ATOM     12  N3   DC A   1      -2.910 -11.552   9.461  1.00  0.21           N  
+ATOM     13  C4   DC A   1      -4.156 -11.992   9.681  1.00  0.23           C  
+ATOM     14  N4   DC A   1      -5.191 -11.254   9.275  1.00  0.25           N  
+ATOM     15  C5   DC A   1      -4.390 -13.239  10.343  1.00  0.24           C  
+ATOM     16  C6   DC A   1      -3.315 -13.951  10.737  1.00  0.22           C  
+ATOM     17  H5'  DC A   1      -1.796 -18.096  11.084  1.00  0.33           H  
+ATOM     18 H5''  DC A   1      -1.211 -18.103  12.760  1.00  0.31           H  
+ATOM     19  H4'  DC A   1       0.424 -17.048  11.235  1.00  0.26           H  
+ATOM     20  H3'  DC A   1      -0.436 -16.042  13.672  1.00  0.22           H  
+ATOM     21  H2'  DC A   1      -1.811 -14.365  12.881  1.00  0.18           H  
+ATOM     22 H2''  DC A   1      -0.262 -13.474  12.868  1.00  0.13           H  
+ATOM     23  H1'  DC A   1       0.039 -13.753  10.585  1.00  0.17           H  
+ATOM     24  H41  DC A   1      -5.032 -10.373   8.807  1.00  0.25           H  
+ATOM     25  H42  DC A   1      -6.135 -11.576   9.436  1.00  0.27           H  
+ATOM     26  H5   DC A   1      -5.402 -13.601  10.523  1.00  0.27           H  
+ATOM     27  H6   DC A   1      -3.456 -14.906  11.242  1.00  0.24           H  
+ATOM     28 HO5'  DC A   1      -2.519 -16.264  13.133  1.00  0.80           H  
+ATOM     29  P    DG A   2       2.049 -14.898  14.167  1.00  0.17           P  
+ATOM     30  OP1  DG A   2       3.039 -15.925  14.562  1.00  0.20           O  
+ATOM     31  OP2  DG A   2       0.992 -14.490  15.120  1.00  0.18           O  
+ATOM     32  O5'  DG A   2       2.848 -13.574  13.708  1.00  0.12           O  
+ATOM     33  C5'  DG A   2       4.003 -13.674  12.866  1.00  0.12           C  
+ATOM     34  C4'  DG A   2       4.515 -12.297  12.436  1.00  0.10           C  
+ATOM     35  O4'  DG A   2       3.493 -11.584  11.692  1.00  0.09           O  
+ATOM     36  C3'  DG A   2       4.856 -11.427  13.636  1.00  0.11           C  
+ATOM     37  O3'  DG A   2       5.969 -10.566  13.360  1.00  0.11           O  
+ATOM     38  C2'  DG A   2       3.619 -10.630  13.850  1.00  0.11           C  
+ATOM     39  C1'  DG A   2       3.046 -10.446  12.471  1.00  0.09           C  
+ATOM     40  N9   DG A   2       1.578 -10.379  12.527  1.00  0.09           N  
+ATOM     41  C8   DG A   2       0.716 -11.142  13.238  1.00  0.10           C  
+ATOM     42  N7   DG A   2      -0.543 -10.878  13.136  1.00  0.09           N  
+ATOM     43  C5   DG A   2      -0.535  -9.799  12.246  1.00  0.09           C  
+ATOM     44  C6   DG A   2      -1.617  -9.044  11.726  1.00  0.10           C  
+ATOM     45  O6   DG A   2      -2.817  -9.180  11.948  1.00  0.10           O  
+ATOM     46  N1   DG A   2      -1.176  -8.047  10.864  1.00  0.11           N  
+ATOM     47  C2   DG A   2       0.143  -7.803  10.538  1.00  0.11           C  
+ATOM     48  N2   DG A   2       0.369  -6.798   9.691  1.00  0.12           N  
+ATOM     49  N3   DG A   2       1.169  -8.511  11.024  1.00  0.09           N  
+ATOM     50  C4   DG A   2       0.762  -9.487  11.867  1.00  0.09           C  
+ATOM     51  H5'  DG A   2       3.738 -14.244  11.978  1.00  0.12           H  
+ATOM     52 H5''  DG A   2       4.792 -14.199  13.404  1.00  0.13           H  
+ATOM     53  H4'  DG A   2       5.397 -12.415  11.809  1.00  0.10           H  
+ATOM     54  H3'  DG A   2       5.058 -12.047  14.509  1.00  0.13           H  
+ATOM     55  H2'  DG A   2       2.922 -11.176  14.473  1.00  0.11           H  
+ATOM     56 H2''  DG A   2       3.855  -9.674  14.295  1.00  0.11           H  
+ATOM     57  H1'  DG A   2       3.442  -9.533  12.047  1.00  0.09           H  
+ATOM     58  H8   DG A   2       1.080 -11.945  13.882  1.00  0.11           H  
+ATOM     59  H1   DG A   2      -1.894  -7.463  10.459  1.00  0.12           H  
+ATOM     60  H21  DG A   2      -0.406  -6.263   9.324  1.00  0.14           H  
+ATOM     61  H22  DG A   2       1.314  -6.571   9.417  1.00  0.13           H  
+ATOM     62  P    DC A   3       6.673  -9.717  14.538  1.00  0.13           P  
+ATOM     63  OP1  DC A   3       8.140  -9.808  14.362  1.00  0.14           O  
+ATOM     64  OP2  DC A   3       6.059 -10.104  15.829  1.00  0.15           O  
+ATOM     65  O5'  DC A   3       6.214  -8.207  14.194  1.00  0.12           O  
+ATOM     66  C5'  DC A   3       6.643  -7.591  12.975  1.00  0.11           C  
+ATOM     67  C4'  DC A   3       6.081  -6.178  12.791  1.00  0.11           C  
+ATOM     68  O4'  DC A   3       4.640  -6.190  12.618  1.00  0.12           O  
+ATOM     69  C3'  DC A   3       6.377  -5.278  13.985  1.00  0.10           C  
+ATOM     70  O3'  DC A   3       6.887  -4.009  13.580  1.00  0.10           O  
+ATOM     71  C2'  DC A   3       5.068  -5.102  14.674  1.00  0.11           C  
+ATOM     72  C1'  DC A   3       4.028  -5.317  13.600  1.00  0.11           C  
+ATOM     73  N1   DC A   3       2.809  -5.927  14.164  1.00  0.11           N  
+ATOM     74  C2   DC A   3       1.580  -5.349  13.871  1.00  0.11           C  
+ATOM     75  O2   DC A   3       1.514  -4.346  13.162  1.00  0.12           O  
+ATOM     76  N3   DC A   3       0.460  -5.924  14.394  1.00  0.12           N  
+ATOM     77  C4   DC A   3       0.544  -7.015  15.169  1.00  0.11           C  
+ATOM     78  N4   DC A   3      -0.570  -7.555  15.665  1.00  0.11           N  
+ATOM     79  C5   DC A   3       1.811  -7.606  15.470  1.00  0.11           C  
+ATOM     80  C6   DC A   3       2.907  -7.029  14.948  1.00  0.11           C  
+ATOM     81  H5'  DC A   3       6.314  -8.210  12.137  1.00  0.12           H  
+ATOM     82 H5''  DC A   3       7.732  -7.541  12.971  1.00  0.11           H  
+ATOM     83  H4'  DC A   3       6.532  -5.737  11.902  1.00  0.10           H  
+ATOM     84  H3'  DC A   3       7.073  -5.777  14.657  1.00  0.10           H  
+ATOM     85  H2'  DC A   3       4.967  -5.825  15.477  1.00  0.11           H  
+ATOM     86 H2''  DC A   3       4.989  -4.096  15.066  1.00  0.10           H  
+ATOM     87  H1'  DC A   3       3.786  -4.362  13.142  1.00  0.11           H  
+ATOM     88  H41  DC A   3      -1.469  -7.142  15.457  1.00  0.12           H  
+ATOM     89  H42  DC A   3      -0.516  -8.377  16.249  1.00  0.11           H  
+ATOM     90  H5   DC A   3       1.887  -8.491  16.101  1.00  0.11           H  
+ATOM     91  H6   DC A   3       3.892  -7.440  15.159  1.00  0.11           H  
+ATOM     92  P    DG A   4       7.629  -3.045  14.637  1.00  0.09           P  
+ATOM     93  OP1  DG A   4       8.924  -2.625  14.056  1.00  0.09           O  
+ATOM     94  OP2  DG A   4       7.587  -3.684  15.972  1.00  0.09           O  
+ATOM     95  O5'  DG A   4       6.641  -1.772  14.652  1.00  0.10           O  
+ATOM     96  C5'  DG A   4       6.013  -1.349  13.437  1.00  0.10           C  
+ATOM     97  C4'  DG A   4       4.838  -0.400  13.671  1.00  0.11           C  
+ATOM     98  O4'  DG A   4       3.638  -1.146  13.981  1.00  0.12           O  
+ATOM     99  C3'  DG A   4       5.096   0.557  14.825  1.00  0.10           C  
+ATOM    100  O3'  DG A   4       4.670   1.888  14.461  1.00  0.11           O  
+ATOM    101  C2'  DG A   4       4.285  -0.006  15.948  1.00  0.08           C  
+ATOM    102  C1'  DG A   4       3.151  -0.750  15.275  1.00  0.10           C  
+ATOM    103  N9   DG A   4       2.720  -1.917  16.058  1.00  0.09           N  
+ATOM    104  C8   DG A   4       3.451  -2.785  16.794  1.00  0.09           C  
+ATOM    105  N7   DG A   4       2.819  -3.742  17.391  1.00  0.09           N  
+ATOM    106  C5   DG A   4       1.495  -3.488  17.011  1.00  0.10           C  
+ATOM    107  C6   DG A   4       0.297  -4.182  17.339  1.00  0.11           C  
+ATOM    108  O6   DG A   4       0.159  -5.181  18.040  1.00  0.12           O  
+ATOM    109  N1   DG A   4      -0.813  -3.587  16.752  1.00  0.12           N  
+ATOM    110  C2   DG A   4      -0.783  -2.467  15.946  1.00  0.11           C  
+ATOM    111  N2   DG A   4      -1.955  -2.040  15.479  1.00  0.12           N  
+ATOM    112  N3   DG A   4       0.336  -1.813  15.632  1.00  0.10           N  
+ATOM    113  C4   DG A   4       1.431  -2.371  16.195  1.00  0.09           C  
+ATOM    114  H5'  DG A   4       5.648  -2.229  12.910  1.00  0.11           H  
+ATOM    115 H5''  DG A   4       6.748  -0.854  12.821  1.00  0.10           H  
+ATOM    116  H4'  DG A   4       4.664   0.180  12.775  1.00  0.12           H  
+ATOM    117  H3'  DG A   4       6.157   0.553  15.087  1.00  0.09           H  
+ATOM    118  H2'  DG A   4       4.899  -0.705  16.523  1.00  0.08           H  
+ATOM    119 H2''  DG A   4       3.907   0.782  16.586  1.00  0.08           H  
+ATOM    120  H1'  DG A   4       2.307  -0.072  15.145  1.00  0.10           H  
+ATOM    121  H8   DG A   4       4.533  -2.668  16.887  1.00  0.09           H  
+ATOM    122  H1   DG A   4      -1.704  -4.015  16.957  1.00  0.13           H  
+ATOM    123  H21  DG A   4      -2.803  -2.531  15.721  1.00  0.13           H  
+ATOM    124  H22  DG A   4      -1.995  -1.222  14.888  1.00  0.12           H  
+ATOM    125  P    DG A   5       5.136   3.205  15.278  1.00  0.11           P  
+ATOM    126  OP1  DG A   5       6.002   4.015  14.391  1.00  0.13           O  
+ATOM    127  OP2  DG A   5       5.636   2.777  16.604  1.00  0.09           O  
+ATOM    128  O5'  DG A   5       3.742   4.005  15.499  1.00  0.12           O  
+ATOM    129  C5'  DG A   5       3.201   4.788  14.420  1.00  0.15           C  
+ATOM    130  C4'  DG A   5       1.720   5.187  14.613  1.00  0.16           C  
+ATOM    131  O4'  DG A   5       0.833   4.030  14.606  1.00  0.15           O  
+ATOM    132  C3'  DG A   5       1.434   5.959  15.896  1.00  0.15           C  
+ATOM    133  O3'  DG A   5       0.752   7.173  15.591  1.00  0.18           O  
+ATOM    134  C2'  DG A   5       0.565   5.074  16.740  1.00  0.13           C  
+ATOM    135  C1'  DG A   5       0.155   3.897  15.892  1.00  0.13           C  
+ATOM    136  N9   DG A   5       0.550   2.649  16.553  1.00  0.10           N  
+ATOM    137  C8   DG A   5       1.786   2.193  16.753  1.00  0.10           C  
+ATOM    138  N7   DG A   5       1.933   1.076  17.378  1.00  0.10           N  
+ATOM    139  C5   DG A   5       0.607   0.727  17.639  1.00  0.09           C  
+ATOM    140  C6   DG A   5       0.087  -0.408  18.308  1.00  0.09           C  
+ATOM    141  O6   DG A   5       0.705  -1.342  18.813  1.00  0.10           O  
+ATOM    142  N1   DG A   5      -1.299  -0.380  18.359  1.00  0.09           N  
+ATOM    143  C2   DG A   5      -2.095   0.618  17.832  1.00  0.09           C  
+ATOM    144  N2   DG A   5      -3.410   0.469  18.002  1.00  0.11           N  
+ATOM    145  N3   DG A   5      -1.612   1.697  17.196  1.00  0.10           N  
+ATOM    146  C4   DG A   5      -0.258   1.688  17.135  1.00  0.09           C  
+ATOM    147  H5'  DG A   5       3.271   4.197  13.507  1.00  0.16           H  
+ATOM    148 H5''  DG A   5       3.809   5.698  14.283  1.00  0.17           H  
+ATOM    149  H4'  DG A   5       1.455   5.830  13.783  1.00  0.18           H  
+ATOM    150  H3'  DG A   5       2.355   6.172  16.435  1.00  0.15           H  
+ATOM    151  H2'  DG A   5       1.124   4.732  17.598  1.00  0.11           H  
+ATOM    152 H2''  DG A   5      -0.320   5.624  17.060  1.00  0.14           H  
+ATOM    153  H1'  DG A   5      -0.920   3.907  15.768  1.00  0.13           H  
+ATOM    154  H8   DG A   5       2.629   2.764  16.398  1.00  0.12           H  
+ATOM    155  H1   DG A   5      -1.740  -1.158  18.829  1.00  0.10           H  
+ATOM    156  H21  DG A   5      -3.769  -0.344  18.482  1.00  0.11           H  
+ATOM    157  H22  DG A   5      -4.047   1.172  17.654  1.00  0.12           H  
+ATOM    158  P    DT A   6       0.701   8.375  16.650  1.00  0.20           P  
+ATOM    159  OP1  DT A   6       0.895   9.647  15.918  1.00  0.24           O  
+ATOM    160  OP2  DT A   6       1.579   8.037  17.793  1.00  0.19           O  
+ATOM    161  O5'  DT A   6      -0.830   8.295  17.145  1.00  0.20           O  
+ATOM    162  C5'  DT A   6      -1.629   9.474  17.195  1.00  0.26           C  
+ATOM    163  C4'  DT A   6      -3.110   9.197  16.957  1.00  0.28           C  
+ATOM    164  O4'  DT A   6      -3.403   8.955  15.555  1.00  0.30           O  
+ATOM    165  C3'  DT A   6      -3.601   7.973  17.720  1.00  0.21           C  
+ATOM    166  O3'  DT A   6      -4.801   8.247  18.449  1.00  0.24           O  
+ATOM    167  C2'  DT A   6      -3.872   6.959  16.662  1.00  0.20           C  
+ATOM    168  C1'  DT A   6      -4.261   7.801  15.485  1.00  0.27           C  
+ATOM    169  N1   DT A   6      -4.120   7.060  14.229  1.00  0.30           N  
+ATOM    170  C2   DT A   6      -5.237   6.954  13.419  1.00  0.39           C  
+ATOM    171  O2   DT A   6      -6.289   7.540  13.669  1.00  0.42           O  
+ATOM    172  N3   DT A   6      -5.105   6.149  12.308  1.00  0.44           N  
+ATOM    173  C4   DT A   6      -3.974   5.449  11.942  1.00  0.40           C  
+ATOM    174  O4   DT A   6      -3.971   4.756  10.926  1.00  0.46           O  
+ATOM    175  C5   DT A   6      -2.854   5.617  12.843  1.00  0.31           C  
+ATOM    176  C7   DT A   6      -1.592   4.795  12.590  1.00  0.27           C  
+ATOM    177  C6   DT A   6      -2.956   6.420  13.940  1.00  0.27           C  
+ATOM    178  H5'  DT A   6      -1.280  10.158  16.431  1.00  0.30           H  
+ATOM    179 H5''  DT A   6      -1.507   9.941  18.173  1.00  0.28           H  
+ATOM    180  H4'  DT A   6      -3.678  10.051  17.274  1.00  0.33           H  
+ATOM    181  H3'  DT A   6      -2.821   7.613  18.391  1.00  0.19           H  
+ATOM    182  H2'  DT A   6      -2.971   6.386  16.447  1.00  0.18           H  
+ATOM    183 H2''  DT A   6      -4.690   6.300  16.953  1.00  0.18           H  
+ATOM    184  H1'  DT A   6      -5.292   8.110  15.619  1.00  0.29           H  
+ATOM    185  H3   DT A   6      -5.911   6.065  11.705  1.00  0.51           H  
+ATOM    186  H71  DT A   6      -0.731   5.453  12.525  1.00  0.99           H  
+ATOM    187  H72  DT A   6      -1.703   4.245  11.651  1.00  1.09           H  
+ATOM    188  H73  DT A   6      -1.452   4.084  13.405  1.00  1.05           H  
+ATOM    189  H6   DT A   6      -2.083   6.618  14.584  1.00  0.23           H  
+ATOM    190  P    DG A   7      -5.197   7.293  19.672  1.00  0.22           P  
+ATOM    191  OP1  DG A   7      -6.662   7.364  19.872  1.00  0.25           O  
+ATOM    192  OP2  DG A   7      -4.274   7.559  20.798  1.00  0.30           O  
+ATOM    193  O5'  DG A   7      -4.829   5.859  19.033  1.00  0.15           O  
+ATOM    194  C5'  DG A   7      -5.757   4.773  18.987  1.00  0.13           C  
+ATOM    195  C4'  DG A   7      -5.211   3.614  19.801  1.00  0.10           C  
+ATOM    196  O4'  DG A   7      -3.871   3.259  19.347  1.00  0.10           O  
+ATOM    197  C3'  DG A   7      -5.109   4.017  21.242  1.00  0.10           C  
+ATOM    198  O3'  DG A   7      -5.466   2.934  22.085  1.00  0.09           O  
+ATOM    199  C2'  DG A   7      -3.688   4.360  21.396  1.00  0.10           C  
+ATOM    200  C1'  DG A   7      -2.955   3.479  20.435  1.00  0.09           C  
+ATOM    201  N9   DG A   7      -1.694   4.118  20.029  1.00  0.10           N  
+ATOM    202  C8   DG A   7      -1.459   5.393  19.638  1.00  0.12           C  
+ATOM    203  N7   DG A   7      -0.230   5.747  19.463  1.00  0.13           N  
+ATOM    204  C5   DG A   7       0.454   4.566  19.773  1.00  0.11           C  
+ATOM    205  C6   DG A   7       1.850   4.295  19.776  1.00  0.12           C  
+ATOM    206  O6   DG A   7       2.775   5.055  19.500  1.00  0.14           O  
+ATOM    207  N1   DG A   7       2.113   2.982  20.147  1.00  0.11           N  
+ATOM    208  C2   DG A   7       1.156   2.043  20.476  1.00  0.10           C  
+ATOM    209  N2   DG A   7       1.604   0.832  20.807  1.00  0.11           N  
+ATOM    210  N3   DG A   7      -0.156   2.290  20.476  1.00  0.09           N  
+ATOM    211  C4   DG A   7      -0.437   3.564  20.117  1.00  0.09           C  
+ATOM    212  H5'  DG A   7      -5.892   4.457  17.952  1.00  0.14           H  
+ATOM    213 H5''  DG A   7      -6.715   5.091  19.397  1.00  0.14           H  
+ATOM    214  H4'  DG A   7      -5.848   2.756  19.740  1.00  0.10           H  
+ATOM    215  H3'  DG A   7      -5.736   4.888  21.443  1.00  0.12           H  
+ATOM    216  H2'  DG A   7      -3.548   5.400  21.118  1.00  0.12           H  
+ATOM    217 H2''  DG A   7      -3.366   4.169  22.394  1.00  0.11           H  
+ATOM    218  H1'  DG A   7      -2.736   2.530  20.919  1.00  0.08           H  
+ATOM    219  H8   DG A   7      -2.278   6.098  19.498  1.00  0.14           H  
+ATOM    220  H1   DG A   7       3.087   2.716  20.168  1.00  0.12           H  
+ATOM    221  H21  DG A   7       2.595   0.642  20.808  1.00  0.13           H  
+ATOM    222  H22  DG A   7       0.949   0.103  21.055  1.00  0.11           H  
+ATOM    223  P    DT A   8      -5.883   3.152  23.620  1.00  0.11           P  
+ATOM    224  OP1  DT A   8      -7.360   3.140  23.717  1.00  0.12           O  
+ATOM    225  OP2  DT A   8      -5.106   4.286  24.169  1.00  0.13           O  
+ATOM    226  O5'  DT A   8      -5.317   1.792  24.252  1.00  0.10           O  
+ATOM    227  C5'  DT A   8      -5.148   0.660  23.393  1.00  0.09           C  
+ATOM    228  C4'  DT A   8      -3.896  -0.136  23.718  1.00  0.10           C  
+ATOM    229  O4'  DT A   8      -2.683   0.560  23.331  1.00  0.10           O  
+ATOM    230  C3'  DT A   8      -3.815  -0.415  25.203  1.00  0.13           C  
+ATOM    231  O3'  DT A   8      -3.526  -1.802  25.425  1.00  0.14           O  
+ATOM    232  C2'  DT A   8      -2.696   0.481  25.660  1.00  0.14           C  
+ATOM    233  C1'  DT A   8      -1.798   0.581  24.462  1.00  0.12           C  
+ATOM    234  N1   DT A   8      -0.983   1.804  24.504  1.00  0.14           N  
+ATOM    235  C2   DT A   8       0.384   1.637  24.649  1.00  0.15           C  
+ATOM    236  O2   DT A   8       0.913   0.527  24.655  1.00  0.16           O  
+ATOM    237  N3   DT A   8       1.127   2.788  24.783  1.00  0.17           N  
+ATOM    238  C4   DT A   8       0.638   4.075  24.790  1.00  0.17           C  
+ATOM    239  O4   DT A   8       1.401   5.030  24.922  1.00  0.19           O  
+ATOM    240  C5   DT A   8      -0.798   4.170  24.634  1.00  0.16           C  
+ATOM    241  C7   DT A   8      -1.436   5.554  24.731  1.00  0.17           C  
+ATOM    242  C6   DT A   8      -1.566   3.046  24.483  1.00  0.14           C  
+ATOM    243  H5'  DT A   8      -5.077   1.011  22.367  1.00  0.08           H  
+ATOM    244 H5''  DT A   8      -6.018   0.010  23.489  1.00  0.09           H  
+ATOM    245  H4'  DT A   8      -3.931  -1.081  23.193  1.00  0.10           H  
+ATOM    246  H3'  DT A   8      -4.750  -0.131  25.692  1.00  0.13           H  
+ATOM    247  H2'  DT A   8      -3.077   1.474  25.899  1.00  0.15           H  
+ATOM    248 H2''  DT A   8      -2.167   0.049  26.510  1.00  0.17           H  
+ATOM    249  H1'  DT A   8      -1.149  -0.288  24.436  1.00  0.13           H  
+ATOM    250  H3   DT A   8       2.126   2.678  24.885  1.00  0.18           H  
+ATOM    251  H71  DT A   8      -1.988   5.771  23.823  1.00  0.93           H  
+ATOM    252  H72  DT A   8      -0.647   6.303  24.865  1.00  0.95           H  
+ATOM    253  H73  DT A   8      -2.106   5.587  25.590  1.00  1.00           H  
+ATOM    254  H6   DT A   8      -2.656   3.122  24.283  1.00  0.13           H  
+ATOM    255  P    DC A   9      -4.156  -2.591  26.679  1.00  0.17           P  
+ATOM    256  OP1  DC A   9      -4.095  -1.706  27.864  1.00  0.20           O  
+ATOM    257  OP2  DC A   9      -3.545  -3.938  26.732  1.00  0.19           O  
+ATOM    258  O5'  DC A   9      -5.706  -2.753  26.247  1.00  0.16           O  
+ATOM    259  C5'  DC A   9      -6.118  -3.726  25.272  1.00  0.14           C  
+ATOM    260  C4'  DC A   9      -6.724  -3.061  24.033  1.00  0.11           C  
+ATOM    261  O4'  DC A   9      -5.701  -2.383  23.257  1.00  0.09           O  
+ATOM    262  C3'  DC A   9      -7.359  -4.078  23.097  1.00  0.12           C  
+ATOM    263  O3'  DC A   9      -8.545  -3.543  22.499  1.00  0.12           O  
+ATOM    264  C2'  DC A   9      -6.326  -4.316  22.049  1.00  0.12           C  
+ATOM    265  C1'  DC A   9      -5.591  -2.998  21.943  1.00  0.10           C  
+ATOM    266  N1   DC A   9      -4.168  -3.164  21.549  1.00  0.10           N  
+ATOM    267  C2   DC A   9      -3.696  -2.343  20.527  1.00  0.09           C  
+ATOM    268  O2   DC A   9      -4.446  -1.532  19.981  1.00  0.08           O  
+ATOM    269  N3   DC A   9      -2.394  -2.466  20.151  1.00  0.09           N  
+ATOM    270  C4   DC A   9      -1.587  -3.363  20.733  1.00  0.11           C  
+ATOM    271  N4   DC A   9      -0.319  -3.459  20.334  1.00  0.12           N  
+ATOM    272  C5   DC A   9      -2.065  -4.215  21.776  1.00  0.13           C  
+ATOM    273  C6   DC A   9      -3.350  -4.082  22.156  1.00  0.12           C  
+ATOM    274  H5'  DC A   9      -6.862  -4.383  25.721  1.00  0.16           H  
+ATOM    275 H5''  DC A   9      -5.255  -4.321  24.970  1.00  0.15           H  
+ATOM    276  H4'  DC A   9      -7.474  -2.335  24.342  1.00  0.11           H  
+ATOM    277  H3'  DC A   9      -7.581  -5.003  23.632  1.00  0.15           H  
+ATOM    278  H2'  DC A   9      -5.662  -5.119  22.351  1.00  0.14           H  
+ATOM    279 H2''  DC A   9      -6.802  -4.553  21.116  1.00  0.12           H  
+ATOM    280  H1'  DC A   9      -6.108  -2.386  21.196  1.00  0.09           H  
+ATOM    281  H41  DC A   9       0.028  -2.856  19.601  1.00  0.12           H  
+ATOM    282  H42  DC A   9       0.297  -4.131  20.767  1.00  0.14           H  
+ATOM    283  H5   DC A   9      -1.416  -4.962  22.235  1.00  0.14           H  
+ATOM    284  H6   DC A   9      -3.732  -4.704  22.962  1.00  0.13           H  
+ATOM    285  P    DC A  10      -9.595  -4.488  21.725  1.00  0.14           P  
+ATOM    286  OP1  DC A  10     -10.962  -4.110  22.148  1.00  0.15           O  
+ATOM    287  OP2  DC A  10      -9.144  -5.893  21.848  1.00  0.16           O  
+ATOM    288  O5'  DC A  10      -9.388  -4.021  20.191  1.00  0.13           O  
+ATOM    289  C5'  DC A  10      -9.676  -2.669  19.809  1.00  0.11           C  
+ATOM    290  C4'  DC A  10      -8.883  -2.210  18.579  1.00  0.11           C  
+ATOM    291  O4'  DC A  10      -7.449  -2.362  18.764  1.00  0.11           O  
+ATOM    292  C3'  DC A  10      -9.257  -2.995  17.324  1.00  0.11           C  
+ATOM    293  O3'  DC A  10      -9.557  -2.113  16.233  1.00  0.11           O  
+ATOM    294  C2'  DC A  10      -8.048  -3.827  17.032  1.00  0.11           C  
+ATOM    295  C1'  DC A  10      -6.901  -3.028  17.605  1.00  0.11           C  
+ATOM    296  N1   DC A  10      -5.750  -3.885  17.966  1.00  0.11           N  
+ATOM    297  C2   DC A  10      -4.488  -3.486  17.548  1.00  0.12           C  
+ATOM    298  O2   DC A  10      -4.352  -2.476  16.862  1.00  0.11           O  
+ATOM    299  N3   DC A  10      -3.418  -4.244  17.914  1.00  0.12           N  
+ATOM    300  C4   DC A  10      -3.576  -5.345  18.659  1.00  0.13           C  
+ATOM    301  N4   DC A  10      -2.506  -6.062  19.003  1.00  0.14           N  
+ATOM    302  C5   DC A  10      -4.876  -5.758  19.090  1.00  0.13           C  
+ATOM    303  C6   DC A  10      -5.927  -5.004  18.716  1.00  0.12           C  
+ATOM    304  H5'  DC A  10      -9.435  -2.010  20.644  1.00  0.11           H  
+ATOM    305 H5''  DC A  10     -10.741  -2.584  19.592  1.00  0.12           H  
+ATOM    306  H4'  DC A  10      -9.093  -1.157  18.400  1.00  0.11           H  
+ATOM    307  H3'  DC A  10     -10.104  -3.648  17.536  1.00  0.12           H  
+ATOM    308  H2'  DC A  10      -8.136  -4.793  17.518  1.00  0.11           H  
+ATOM    309 H2''  DC A  10      -7.924  -3.954  15.965  1.00  0.11           H  
+ATOM    310  H1'  DC A  10      -6.587  -2.281  16.878  1.00  0.11           H  
+ATOM    311  H41  DC A  10      -1.585  -5.774  18.701  1.00  0.14           H  
+ATOM    312  H42  DC A  10      -2.615  -6.894  19.566  1.00  0.14           H  
+ATOM    313  H5   DC A  10      -5.008  -6.636  19.721  1.00  0.13           H  
+ATOM    314  H6   DC A  10      -6.934  -5.307  18.987  1.00  0.12           H  
+ATOM    315  P    DG A  11     -10.337  -2.640  14.922  1.00  0.12           P  
+ATOM    316  OP1  DG A  11     -11.595  -1.871  14.793  1.00  0.13           O  
+ATOM    317  OP2  DG A  11     -10.378  -4.119  14.965  1.00  0.12           O  
+ATOM    318  O5'  DG A  11      -9.349  -2.199  13.725  1.00  0.12           O  
+ATOM    319  C5'  DG A  11      -9.185  -0.816  13.390  1.00  0.13           C  
+ATOM    320  C4'  DG A  11      -8.023  -0.595  12.425  1.00  0.14           C  
+ATOM    321  O4'  DG A  11      -6.776  -1.097  12.979  1.00  0.15           O  
+ATOM    322  C3'  DG A  11      -8.241  -1.323  11.115  1.00  0.13           C  
+ATOM    323  O3'  DG A  11      -7.790  -0.554  10.000  1.00  0.15           O  
+ATOM    324  C2'  DG A  11      -7.420  -2.546  11.238  1.00  0.12           C  
+ATOM    325  C1'  DG A  11      -6.268  -2.146  12.121  1.00  0.14           C  
+ATOM    326  N9   DG A  11      -5.769  -3.292  12.903  1.00  0.13           N  
+ATOM    327  C8   DG A  11      -6.463  -4.228  13.584  1.00  0.12           C  
+ATOM    328  N7   DG A  11      -5.793  -5.142  14.203  1.00  0.11           N  
+ATOM    329  C5   DG A  11      -4.476  -4.781  13.901  1.00  0.11           C  
+ATOM    330  C6   DG A  11      -3.254  -5.393  14.286  1.00  0.11           C  
+ATOM    331  O6   DG A  11      -3.087  -6.389  14.986  1.00  0.11           O  
+ATOM    332  N1   DG A  11      -2.158  -4.716  13.766  1.00  0.12           N  
+ATOM    333  C2   DG A  11      -2.223  -3.587  12.974  1.00  0.13           C  
+ATOM    334  N2   DG A  11      -1.056  -3.081  12.570  1.00  0.14           N  
+ATOM    335  N3   DG A  11      -3.369  -3.003  12.608  1.00  0.13           N  
+ATOM    336  C4   DG A  11      -4.452  -3.647  13.103  1.00  0.12           C  
+ATOM    337  H5'  DG A  11      -8.993  -0.254  14.300  1.00  0.14           H  
+ATOM    338 H5''  DG A  11     -10.103  -0.449  12.932  1.00  0.12           H  
+ATOM    339  H4'  DG A  11      -7.914   0.459  12.225  1.00  0.16           H  
+ATOM    340  H3'  DG A  11      -9.295  -1.584  10.998  1.00  0.12           H  
+ATOM    341  H2'  DG A  11      -8.000  -3.342  11.697  1.00  0.11           H  
+ATOM    342 H2''  DG A  11      -7.065  -2.835  10.264  1.00  0.13           H  
+ATOM    343  H1'  DG A  11      -5.469  -1.754  11.497  1.00  0.16           H  
+ATOM    344  H8   DG A  11      -7.551  -4.219  13.593  1.00  0.12           H  
+ATOM    345  H1   DG A  11      -1.252  -5.100  13.995  1.00  0.12           H  
+ATOM    346  H21  DG A  11      -0.191  -3.522  12.846  1.00  0.14           H  
+ATOM    347  H22  DG A  11      -1.039  -2.256  11.987  1.00  0.15           H  
+ATOM    348  P    DC A  12      -8.137  -1.014   8.496  1.00  0.16           P  
+ATOM    349  OP1  DC A  12      -8.560   0.178   7.729  1.00  0.18           O  
+ATOM    350  OP2  DC A  12      -9.013  -2.206   8.556  1.00  0.14           O  
+ATOM    351  O5'  DC A  12      -6.684  -1.478   7.961  1.00  0.18           O  
+ATOM    352  C5'  DC A  12      -5.640  -0.508   7.849  1.00  0.20           C  
+ATOM    353  C4'  DC A  12      -4.313  -1.085   7.338  1.00  0.19           C  
+ATOM    354  O4'  DC A  12      -3.724  -2.022   8.285  1.00  0.18           O  
+ATOM    355  C3'  DC A  12      -4.472  -1.835   6.023  1.00  0.19           C  
+ATOM    356  O3'  DC A  12      -3.387  -1.544   5.133  1.00  0.21           O  
+ATOM    357  C2'  DC A  12      -4.464  -3.277   6.432  1.00  0.17           C  
+ATOM    358  C1'  DC A  12      -3.553  -3.311   7.640  1.00  0.15           C  
+ATOM    359  N1   DC A  12      -3.924  -4.410   8.551  1.00  0.13           N  
+ATOM    360  C2   DC A  12      -2.928  -5.271   8.992  1.00  0.13           C  
+ATOM    361  O2   DC A  12      -1.763  -5.117   8.629  1.00  0.15           O  
+ATOM    362  N3   DC A  12      -3.284  -6.285   9.830  1.00  0.12           N  
+ATOM    363  C4   DC A  12      -4.559  -6.443  10.215  1.00  0.11           C  
+ATOM    364  N4   DC A  12      -4.879  -7.445  11.034  1.00  0.10           N  
+ATOM    365  C5   DC A  12      -5.577  -5.551   9.757  1.00  0.12           C  
+ATOM    366  C6   DC A  12      -5.214  -4.562   8.937  1.00  0.14           C  
+ATOM    367  H5'  DC A  12      -5.471  -0.056   8.825  1.00  0.21           H  
+ATOM    368 H5''  DC A  12      -5.972   0.261   7.170  1.00  0.23           H  
+ATOM    369  H4'  DC A  12      -3.613  -0.264   7.187  1.00  0.20           H  
+ATOM    370  H3'  DC A  12      -5.428  -1.581   5.560  1.00  0.20           H  
+ATOM    371  H2'  DC A  12      -5.470  -3.604   6.701  1.00  0.16           H  
+ATOM    372 H2''  DC A  12      -4.064  -3.898   5.635  1.00  0.18           H  
+ATOM    373  H1'  DC A  12      -2.517  -3.428   7.317  1.00  0.16           H  
+ATOM    374  H41  DC A  12      -4.165  -8.079  11.362  1.00  0.11           H  
+ATOM    375  H42  DC A  12      -5.837  -7.569  11.329  1.00  0.10           H  
+ATOM    376  H5   DC A  12      -6.613  -5.665  10.060  1.00  0.13           H  
+ATOM    377  H6   DC A  12      -5.961  -3.871   8.571  1.00  0.16           H  
+ATOM    378  P    DG A  13      -3.463  -1.929   3.569  1.00  0.24           P  
+ATOM    379  OP1  DG A  13      -3.291  -0.690   2.778  1.00  0.26           O  
+ATOM    380  OP2  DG A  13      -4.651  -2.785   3.353  1.00  0.24           O  
+ATOM    381  O5'  DG A  13      -2.146  -2.839   3.377  1.00  0.25           O  
+ATOM    382  C5'  DG A  13      -0.849  -2.302   3.660  1.00  0.27           C  
+ATOM    383  C4'  DG A  13       0.152  -3.394   4.038  1.00  0.30           C  
+ATOM    384  O4'  DG A  13      -0.354  -4.207   5.136  1.00  0.27           O  
+ATOM    385  C3'  DG A  13       0.409  -4.342   2.873  1.00  0.34           C  
+ATOM    386  O3'  DG A  13       1.778  -4.760   2.856  1.00  0.39           O  
+ATOM    387  C2'  DG A  13      -0.497  -5.506   3.171  1.00  0.33           C  
+ATOM    388  C1'  DG A  13      -0.494  -5.577   4.683  1.00  0.29           C  
+ATOM    389  N9   DG A  13      -1.720  -6.214   5.223  1.00  0.25           N  
+ATOM    390  C8   DG A  13      -3.033  -5.955   4.978  1.00  0.23           C  
+ATOM    391  N7   DG A  13      -3.909  -6.675   5.594  1.00  0.21           N  
+ATOM    392  C5   DG A  13      -3.102  -7.527   6.349  1.00  0.22           C  
+ATOM    393  C6   DG A  13      -3.468  -8.564   7.246  1.00  0.22           C  
+ATOM    394  O6   DG A  13      -4.597  -8.934   7.564  1.00  0.22           O  
+ATOM    395  N1   DG A  13      -2.350  -9.179   7.796  1.00  0.24           N  
+ATOM    396  C2   DG A  13      -1.039  -8.840   7.522  1.00  0.26           C  
+ATOM    397  N2   DG A  13      -0.099  -9.549   8.149  1.00  0.29           N  
+ATOM    398  N3   DG A  13      -0.687  -7.865   6.680  1.00  0.27           N  
+ATOM    399  C4   DG A  13      -1.760  -7.252   6.129  1.00  0.25           C  
+ATOM    400  H5'  DG A  13      -0.931  -1.597   4.489  1.00  0.26           H  
+ATOM    401 H5''  DG A  13      -0.483  -1.773   2.780  1.00  0.29           H  
+ATOM    402  H4'  DG A  13       1.091  -2.933   4.342  1.00  0.33           H  
+ATOM    403  H3'  DG A  13       0.143  -3.864   1.922  1.00  0.36           H  
+ATOM    404 HO3'  DG A  13       1.945  -5.220   3.682  1.00  0.89           H  
+ATOM    405  H2'  DG A  13      -1.506  -5.312   2.802  1.00  0.31           H  
+ATOM    406 H2''  DG A  13      -0.101  -6.426   2.741  1.00  0.37           H  
+ATOM    407  H1'  DG A  13       0.379  -6.147   5.007  1.00  0.32           H  
+ATOM    408  H8   DG A  13      -3.340  -5.169   4.292  1.00  0.24           H  
+ATOM    409  H1   DG A  13      -2.533  -9.936   8.440  1.00  0.25           H  
+ATOM    410  H21  DG A  13      -0.363 -10.288   8.785  1.00  0.29           H  
+ATOM    411  H22  DG A  13       0.877  -9.348   7.986  1.00  0.31           H  
+TER     412       DG A  13                                                      
+MASTER      127    0    0    0    0    0    0    6  264    1    0    1          
+END                                                                             

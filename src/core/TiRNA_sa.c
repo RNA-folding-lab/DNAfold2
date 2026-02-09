@@ -1,47 +1,116 @@
-/*********** 本程序用来预测RNA三维结构以及热稳定性 ，使用副本交换蒙特卡洛退火算法 *********************/
+/**
+ * TiRNA_sa.c - DNA/RNA 3D Structure Prediction using Simulated Annealing
+ * 
+ * This program predicts DNA/RNA tertiary structure and thermal stability
+ * using Simulated Annealing (SA) Monte Carlo sampling.
+ * 
+ * Algorithm Overview:
+ * 1. Read initial coarse-grained (CG) conformation from ch.dat
+ * 2. Run SA across multiple temperatures (high to low)
+ * 3. At each temperature, perform MC moves (pivot, translation, fragment)
+ * 4. Accept/reject moves based on Metropolis criterion
+ * 5. Output conformations and energy trajectories
+ * 
+ * Input Files:
+ *   - ch.dat: Initial CG coordinates (P-S-N beads per nucleotide)
+ *   - config1.dat: Runtime parameters (steps, ion concentrations, etc.)
+ * 
+ * Output Files:
+ *   - conf_*.dat: Conformations at each temperature replica
+ *   - Energy_*.dat: Energy trajectories
+ *   - Bp_*.dat: Base pairing information
+ *   - sec_stru_*.dat: Secondary structure details
+ *   - para.dat: Parameter log file
+ * 
+ * config1.dat Format:
+ *   method total_steps opt_steps Na_conc Mg_conc n_structures n_threads conf_freq print_freq
+ * 
+ * Author: DNAfold2 Team
+ * License: See LICENSE file
+ */
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
-#define pi 3.1415
-#define step1 .5           //Translation step length in Pivot move in Folding
-#define step1_1 .2         //Translation step length in 3nt fragment move in Folding
-#define step2 1.0          //One atom move step in Optimization
-#define step3 .06          //All atoms move step in Optimization
-#define OPTIMIZE_t 1000       //The frequency of all atoms move in the 1+2 Optimization way
-#define total0 100000   //Optimization setps
-#define total2 5000000   //Max steps in Folding at constant T (melting)         
-#define Alpha 0.992        //Annealing rate
-#define Anneal 1           //Annealing shecdle
-#define lt 25             //The lowest temperature in annealing folding process
-//#define ht 35
-#define jt 10              //Cooling with constant T of jt (e.g., jt=5C) 
-#define tran 10            //rotational frequency        //??=Beta3*GC  For non-canoncial base-pairing
-#define gamma 0.1         //The energy threshold of base-pairing for statistics (碱基配对的能量Ubp0<gamma*Ubp算作配对形成)
-#define tconf1 500       //The frequency of conformational output
-#define tconf2 10000        //The frequency of conformational output at 25C in structure prediction
-//#define trmsd 5000       //类似MD，计算相邻trmsd的构象间的差别
-#define tenergy 500     //The frequency of energy calculation
-#define tbp 100          //The frequency of output information for base-pairing
-#define tG 0            //计算平均base-pair数量的起始
-#define tG_s 100           //Calculate pbp   经简单测试貌似还是100靠谱，设置为10000并没有节省计算时间也没能更好的呈现平衡
-#define fp_bp 500         //The frequency of output the value of BP & PBP & G
-#define tprint 10000       //The frequency of screen output
-#define t_OPT1 100        //The frequency of conformation output in Optimization
-#define t_OPT2 1000
-#define t_si 1000          //Output frequency of structure information
-#define tMove 1           //The frequency of 3-nt fragment moves；
-// Electrostatic
-//#define Ek 78.0          // debye parameters
-#define bl 5.45
-//#define RG 1.1           //TBI,the Rg of RNAs comparing with Rg of A-form helix;
-#define IMg 3.0            //2:2 IMg=4.0; 2:1 IMg=3.0;
-#define thread 15
-#define ww 0.5
 
+/* ============================================================================
+ * MATHEMATICAL AND PHYSICAL CONSTANTS
+ * ============================================================================ */
+#define pi 3.1415              /* Pi constant */
+
+/* ============================================================================
+ * MONTE CARLO MOVE PARAMETERS
+ * These control the step sizes for different types of conformational moves
+ * ============================================================================ */
+#define step1 0.5              /* Translation step length in Pivot move (Angstroms) */
+#define step1_1 0.2            /* Translation step in 3-nt fragment move (Angstroms) */
+#define step2 1.0              /* Single atom move step in Optimization (Angstroms) */
+#define step3 0.06             /* All atoms collective move step (Angstroms) */
+
+/* ============================================================================
+ * SIMULATION CONTROL PARAMETERS (can be overridden by config)
+ * ============================================================================ */
+#define DEFAULT_THREADS 15     /* Default number of temperature replicas */
+#define MAX_THREADS 20         /* Maximum threads (for array allocation) */
+#define OPTIMIZE_t 1000        /* Frequency of collective all-atoms move */
+#define total0 100000          /* Default optimization steps */
+#define total2 5000000         /* Max steps in constant-T folding (melting study) */
+
+/* ============================================================================
+ * SIMULATED ANNEALING PARAMETERS
+ * ============================================================================ */
+#define Alpha 0.992            /* Annealing cooling rate (T_new = Alpha * T_old) */
+#define Anneal 1               /* Annealing schedule type */
+#define lt 25                  /* Lowest temperature in annealing (Celsius) */
+#define jt 10                  /* Temperature step for cooling (Celsius) */
+
+/* ============================================================================
+ * OUTPUT FREQUENCY PARAMETERS (can be overridden by config)
+ * ============================================================================ */
+#define DEFAULT_TCONF 500      /* Default: output conformation every N steps */
+#define tconf2 10000           /* Conformation output freq at 25C (structure prediction) */
+#define tenergy 500            /* Energy calculation frequency */
+#define tbp 100                /* Base-pairing info output frequency */
+#define fp_bp 500              /* BP & PBP & G output frequency */
+#define DEFAULT_TPRINT 10000   /* Default: screen output frequency */
+#define t_OPT1 100             /* Conformation output freq in Optimization */
+#define t_OPT2 1000            /* Alternative optimization output freq */
+#define t_si 1000              /* Structure information output frequency */
+
+/* ============================================================================
+ * ENERGY FUNCTION PARAMETERS
+ * ============================================================================ */
+#define gamma 0.1              /* Base-pairing energy threshold for statistics */
+#define tran 10                /* Rotational frequency parameter */
+#define tMove 1                /* Frequency of 3-nt fragment moves */
+#define bl 5.45                /* Bead distance parameter for electrostatics */
+#define IMg 3.0                /* Ion interaction: 2:2=4.0, 2:1=3.0 */
+#define ww 0.5                 /* Weight parameter */
+#define tG 0                   /* Start step for average base-pair calculation */
+#define tG_s 100               /* PBP calculation frequency */
+
+/* ============================================================================
+ * CONFIGURABLE GLOBAL VARIABLES
+ * These are read from config1.dat at runtime
+ * ============================================================================ */
+int n_threads = DEFAULT_THREADS;  /* Number of temperature replicas */
+int tconf1 = DEFAULT_TCONF;       /* Conformation output frequency */
+int tprint = DEFAULT_TPRINT;      /* Screen output frequency */
+
+/* ============================================================================
+ * GLOBAL STATE VARIABLES
+ * ============================================================================ */
+/* Thermodynamic variables */
 float T,Kd,I,Ek,q4,CNa,CMg,fNa,D,B0;
+
+/* Simulation state */
 int N,N0,N1,total,Nbp,t,l,ll,lll,llll,salt,nm,Folding=1,Energy,Dangling,Bulge,Internal,Pseudoknot,Move=0;
+
+/* Base pairing matrices: s[i][j]=1 means bases i,j are paired */
 int s[1000][1000],ss[1000][1000],a[10000],c[10000],bp,bp0,BP0,BP,am[1000],cm[1000],sm[1000][1000],ssm[1000][1000];
+
+/* Optimization and structural analysis */
 int OPTIMIZE_W,OPTIMIZE,M_Y,Stem[1000],Internal_1[1000],Internal_b[1000],Internal_a[1000],Bulge_1[1000],Pseudoknot_1[1000],t_OPT;
 float rand01,phi,theta,rm,d1,d2,step;
 float dis0,Xc,Yc,Zc,Rg,end,pl2,b,pl3,pl4,rgp,rep,pl3p,pl4p,pl0,pl0p,pl2p,pl2,PBP,pbp,G,GG,m,M;
@@ -59,8 +128,8 @@ float qq4,frac[1000],fi[1000],frac0[1000],frac1[1000],frac2[1000];
 float tt0[15]={25.0,31.0,37.0,43.0,49.0,55.0,63.0,71.0,78.0,86.0,94.0,102.0,110.0,120.0,130.0},t0;
 int tem_j;
 float Bs[24];
-//dHmis/dSmis:avg. value of terminal mismatch parameters;Kmis:First Mismatch base pairs (UU/GA, or GG); GUend:GU or AU end penalty
-FILE *fp,*fp_conf[thread],*fp_sec_stru[thread],*fp_Energy[thread],*fp8,*fp9,*fp_Bp[thread],*fpcfig;
+/* File handles: sized for MAX_THREADS replicas */
+FILE *fp, *fp_conf[MAX_THREADS], *fp_sec_stru[MAX_THREADS], *fp_Energy[MAX_THREADS], *fp8, *fp9, *fp_Bp[MAX_THREADS], *fpcfig;
 //FILE *fp4;
 int main()
 {
@@ -84,9 +153,12 @@ int main()
  	Fixed_Atom();      //The Centre atom N1 will be fixed;
  	MC_Annealing(x0,y0,z0);
 
-	for(i=0;i<thread;i++)
-	{
-		fclose(fp_conf[i]);fclose(fp_sec_stru[i]); fclose(fp_Energy[i]);fclose(fp_Bp[i]);
+	/* Close output files */
+	for(i = 0; i < n_threads; i++) {
+		fclose(fp_conf[i]);
+		fclose(fp_sec_stru[i]);
+		fclose(fp_Energy[i]);
+		fclose(fp_Bp[i]);
 	}
 	fclose(fp9);
  	// fclose(fp4);fclose(fp8);fclose(fp_conf0);
@@ -96,37 +168,107 @@ int main()
 
 /* &%$#@!~&%$#@!~&%$#@!~   Some functions or modules for move and calculation    &%$#@!~&%$#@!~&%$#@!~ */
 /*********************读入文件，读出文件，输入参数************************/
+/**
+ * Put_File - Initialize file handles and read configuration
+ * 
+ * This function:
+ * 1. Opens input file (ch.dat) for initial conformation
+ * 2. Creates output files for each temperature replica
+ * 3. Reads simulation parameters from config1.dat
+ * 
+ * config1.dat format:
+ *   method total_steps opt_steps Na_conc Mg_conc n_structures [n_threads] [conf_freq] [print_freq]
+ *   - method: 1=REMC, 2=SA
+ *   - total_steps: Number of MC steps per temperature
+ *   - opt_steps: Optimization steps (not used in SA)
+ *   - Na_conc: Na+ concentration in mM
+ *   - Mg_conc: Mg2+ concentration in mM
+ *   - n_structures: Number of structures to output
+ *   - n_threads: (optional) Number of temperature replicas, default=15
+ *   - conf_freq: (optional) Conformation output frequency, default=500
+ *   - print_freq: (optional) Screen output frequency, default=10000
+ */
 void Put_File (void) 
 {
-	int i,result;
+	int i, result;
 	char filename[30];
- 	fp=fopen("ch.dat","r+");                //initial conformation
- 	for (i=0;i<thread;i++) 
-     	{
-           	sprintf(filename,"conf_%d.dat",i); fp_conf[i]=fopen(filename,"w+");
-           	sprintf(filename,"sec_stru_%d.dat",i);fp_sec_stru[i]=fopen(filename,"w+");         //Details of base-pairs 
- 		sprintf(filename,"Energy_%d.dat",i);fp_Energy[i]=fopen(filename,"w+"); 
- 		sprintf(filename,"Bp_%d.dat",i);fp_Bp[i]=fopen(filename,"w+");    
- 	
-           	//sprintf(filename,"Energy_%d.dat",i);    fpenergy[i]=fopen(filename,"w+");
-      	}                //output of conformations
- 	         //The Energy of the conformations 
- 	fp9=fopen("para.dat","w+");             //Just like the log file for outputing the important paramaters. 
- 	fpcfig=fopen("config1.dat","r+");
- 	int ca,cb,cc,cd,ce,ct;
- 	while(!feof(fpcfig))
- 	{
- 		result=fscanf(fpcfig,"%d %d %d %d %d %d\n",&ct,&ca,&cb,&cc,&cd,&ce);
- 	}
+	
+	/* Open initial conformation file */
+	fp = fopen("ch.dat", "r+");
+	if (fp == NULL) {
+		printf("Error: Cannot open ch.dat\n");
+		exit(1);
+	}
+	
+	/* Create output files for each temperature replica */
+	for (i = 0; i < n_threads; i++) {
+		/* Conformation trajectories */
+		sprintf(filename, "conf_%d.dat", i);
+		fp_conf[i] = fopen(filename, "w+");
+		
+		/* Secondary structure details (base-pair info) */
+		sprintf(filename, "sec_stru_%d.dat", i);
+		fp_sec_stru[i] = fopen(filename, "w+");
+		
+		/* Energy trajectories */
+		sprintf(filename, "Energy_%d.dat", i);
+		fp_Energy[i] = fopen(filename, "w+");
+		
+		/* Base pairing statistics */
+		sprintf(filename, "Bp_%d.dat", i);
+		fp_Bp[i] = fopen(filename, "w+");
+	}
+	
+	/* Parameter log file */
+	fp9 = fopen("para.dat", "w+");
+	
+	/* Read configuration file */
+	fpcfig = fopen("config1.dat", "r+");
+	if (fpcfig == NULL) {
+		printf("Error: Cannot open config1.dat\n");
+		exit(1);
+	}
+	
+	/* Parse config: method steps opt_steps Na Mg n_struct [threads] [conf_freq] [print_freq] */
+	int ct, ca, cb, cc, cd, ce, cf, cg, ch;
+	cf = DEFAULT_THREADS;  /* defaults */
+	cg = DEFAULT_TCONF;
+	ch = DEFAULT_TPRINT;
+	
+	while (!feof(fpcfig)) {
+		result = fscanf(fpcfig, "%d %d %d %d %d %d %d %d %d\n",
+		                &ct, &ca, &cb, &cc, &cd, &ce, &cf, &cg, &ch);
+		if (result < 6) break;  /* Need at least 6 values */
+	}
 	(void)result;
- 	fclose(fpcfig);
- 	total=ca;
- 	CNa=cc;
- 	CMg=cd;
- 	if(CNa==0&&CMg==0) 	{salt=0;}
- 	else			{salt=1;}
- //fp4=fopen("energy.dat","w+");           //用于控制能量的输出以调试程序；
- //fp8=fopen("rmsd-t.dat","w+"); //fp_conf0=fopen("Debye-value.dat","w+"); 
+	fclose(fpcfig);
+	
+	/* Apply configuration */
+	total = ca;           /* Total MC steps per temperature */
+	CNa = cc;             /* Na+ concentration (mM) */
+	CMg = cd;             /* Mg2+ concentration (mM) */
+	
+	/* Optional parameters with bounds checking */
+	if (cf > 0 && cf <= 20) n_threads = cf;
+	if (cg > 0) tconf1 = cg;
+	if (ch > 0) tprint = ch;
+	
+	/* Set salt flag */
+	if (CNa == 0 && CMg == 0) {
+		salt = 0;  /* No salt */
+	} else {
+		salt = 1;  /* Salt present */
+	}
+	
+	/* Log configuration */
+	fprintf(fp9, "Configuration:\n");
+	fprintf(fp9, "  Total steps: %d\n", total);
+	fprintf(fp9, "  Na+ conc: %.1f mM\n", CNa);
+	fprintf(fp9, "  Mg2+ conc: %.1f mM\n", CMg);
+	fprintf(fp9, "  Threads: %d\n", n_threads);
+	fprintf(fp9, "  Conf output freq: %d\n", tconf1);
+	fprintf(fp9, "  Print freq: %d\n", tprint);
+	fflush(fp9);
 }
 /*********************************************/
 void Fixed_Atom(void)
@@ -208,23 +350,46 @@ void Bs_stacking()
 }
 /***********************************/
 /****************Monte Carlo simulated annealing*********************/
-void MC_Annealing(float x0[1000],float y0[1000],float z0[1000])
+/**
+ * MC_Annealing - Main Monte Carlo Simulated Annealing loop
+ * 
+ * Iterates through temperatures from high to low,
+ * running MC sampling at each temperature.
+ * 
+ * @param x0, y0, z0: Initial coordinates
+ */
+void MC_Annealing(float x0[1000], float y0[1000], float z0[1000])
 {
-    	int k,i;
-    	void MC_T();
-    	l=0;ll=0;lll=0;llll=0;                 //MC steps independent of T
-    	for (k=thread-1;k>=0;k--)                  //Temperature cycle mechanism
-   	{
-   		t0=tt0[k];
-   		tem_j=k;
-            	Parameters_T(t0);     //parameters at any t0: steps, T, Debye length, ionic strength, ion fraction etc.
-            	for (i=1;i<=N0;i++) 
-            	{
-                   	x[i]=x0[i];y[i]=y0[i];z[i]=z0[i];
-            	}  //The initconf.=last one at previous T 
-            	MC_T();
-            	for(i=1;i<=N0;i++) {x0[i]=x[i];y0[i]=y[i];z0[i]=z[i];}
-     	}     //End of the T cycle;
+	int k, i;
+	void MC_T();
+	
+	l = 0; ll = 0; lll = 0; llll = 0;  /* Reset MC step counters */
+	
+	/* Temperature loop: from highest to lowest */
+	for (k = n_threads - 1; k >= 0; k--) {
+		t0 = tt0[k];       /* Current temperature from schedule */
+		tem_j = k;         /* Current temperature index */
+		
+		/* Calculate T-dependent parameters */
+		Parameters_T(t0);
+		
+		/* Initialize coordinates for this temperature */
+		for (i = 1; i <= N0; i++) {
+			x[i] = x0[i];
+			y[i] = y0[i];
+			z[i] = z0[i];
+		}
+		
+		/* Run MC at this temperature */
+		MC_T();
+		
+		/* Save final coordinates for next temperature */
+		for (i = 1; i <= N0; i++) {
+			x0[i] = x[i];
+			y0[i] = y[i];
+			z0[i] = z[i];
+		}
+	}  /* End of temperature loop */
 }
 /*****************Monte Carlo simulation at given Temperature******************************/
 void MC_T(void)

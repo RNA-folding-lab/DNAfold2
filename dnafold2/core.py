@@ -364,12 +364,15 @@ class DNAFolder:
             print("Note: Full optimization and rebuild steps require additional setup.")
     
     def _create_numeric_config(self, work_dir: Path) -> None:
-        """Create config1.dat with numeric values for C code."""
-        # The C code expects: sampling_method steps optimize_steps na_concentration mg_concentration n_structures
+        """Create config1.dat with numeric values for C code.
+        
+        Format: method steps opt_steps Na Mg n_struct n_threads conf_freq print_freq
+        """
         method_num = 1 if self.config.sampling_method == "remc" else 2
         config1_content = (
             f"{method_num} {self.config.folding_steps} {self.config.optimizing_steps} "
-            f"{self.config.na_concentration} {self.config.mg_concentration} {self.config.n_structures}\n"
+            f"{self.config.na_concentration} {self.config.mg_concentration} {self.config.n_structures} "
+            f"{self.config.n_threads} {self.config.conf_output_freq} {self.config.print_freq}\n"
         )
         (work_dir / "config1.dat").write_text(config1_content)
     

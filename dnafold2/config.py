@@ -22,6 +22,9 @@ class FoldingConfig:
         na_concentration: Concentration of Na+ ions in mM
         mg_concentration: Concentration of Mg2+ ions in mM
         n_structures: Number of predicted 3D structures to output
+        n_threads: Number of temperature replicas (1-20, default 15)
+        conf_output_freq: Conformation output frequency (default 500)
+        print_freq: Screen output frequency (default 10000)
     """
     sampling_method: str = "remc"
     folding_steps: int = 150000
@@ -29,6 +32,9 @@ class FoldingConfig:
     na_concentration: float = 1000.0
     mg_concentration: float = 0.0
     n_structures: int = 10
+    n_threads: int = 15
+    conf_output_freq: int = 500
+    print_freq: int = 10000
     
     def __post_init__(self):
         """Validate configuration parameters."""
@@ -44,6 +50,12 @@ class FoldingConfig:
             raise ValueError("mg_concentration cannot be negative")
         if self.n_structures < 1:
             raise ValueError("n_structures must be at least 1")
+        if not 1 <= self.n_threads <= 20:
+            raise ValueError("n_threads must be between 1 and 20")
+        if self.conf_output_freq < 1:
+            raise ValueError("conf_output_freq must be positive")
+        if self.print_freq < 1:
+            raise ValueError("print_freq must be positive")
     
     @classmethod
     def from_file(cls, config_path: str | Path) -> "FoldingConfig":
@@ -114,6 +126,9 @@ Optimizing_steps {self.optimizing_steps}     #Number of steps in optimizing prog
 CNa {int(self.na_concentration)}   \t           #Concentration of Na (unit:mM)
 CMg {int(self.mg_concentration)}\t\t\t   #Concentration of Mg (unit:mM)
 Ncout {self.n_structures}                   #Number of predicted 3D structures
+Nthreads {self.n_threads}                   #Number of temperature replicas (1-20)
+Conf_freq {self.conf_output_freq}              #Conformation output frequency
+Print_freq {self.print_freq}             #Screen output frequency
 """
         
         with open(config_path, 'w') as f:
@@ -128,6 +143,9 @@ Ncout {self.n_structures}                   #Number of predicted 3D structures
             "na_concentration": self.na_concentration,
             "mg_concentration": self.mg_concentration,
             "n_structures": self.n_structures,
+            "n_threads": self.n_threads,
+            "conf_output_freq": self.conf_output_freq,
+            "print_freq": self.print_freq,
         }
 
 

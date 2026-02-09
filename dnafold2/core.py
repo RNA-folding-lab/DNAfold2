@@ -227,8 +227,8 @@ class DNAFolder:
         if scoring_src.exists():
             shutil.copytree(scoring_src, work_dir / "scoring", dirs_exist_ok=True)
         
-        # Copy required binaries
-        for binary in ["TiRNA_remc", "op"]:
+        # Copy required binaries (both REMC and SA variants)
+        for binary in ["TiRNA_remc", "TiRNA_sa", "TiRNA_optimize", "op"]:
             src = self.bin_dir / binary
             if src.exists():
                 shutil.copy2(src, work_dir / binary)
@@ -258,7 +258,9 @@ class DNAFolder:
         6. Rebuild all-atom structures
         """
         env = os.environ.copy()
-        env["OMP_NUM_THREADS"] = str(os.cpu_count() or 1)
+        # Only set OMP_NUM_THREADS if not already set (respects SLURM allocation)
+        if "OMP_NUM_THREADS" not in env:
+            env["OMP_NUM_THREADS"] = str(os.cpu_count() or 1)
         
         def run_cmd(cmd: List[str], cwd: Path, desc: str) -> None:
             """Run a command and handle errors."""

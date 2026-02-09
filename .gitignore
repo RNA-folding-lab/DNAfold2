@@ -58,6 +58,7 @@ Thumbs.db
 # DNAfold2 specific
 bin/
 !bin/.gitkeep
+!bin/TiRNA_remc
 result/
 results/
 model/

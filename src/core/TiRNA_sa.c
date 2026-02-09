@@ -64,7 +64,7 @@ FILE *fp,*fp_conf[thread],*fp_sec_stru[thread],*fp_Energy[thread],*fp8,*fp9,*fp_
 //FILE *fp4;
 int main()
 {
-	int i,duo1,duo2;
+	int i,duo1,duo2,result;
 	float x0[10000],y0[10000],z0[10000]/*,x1[10000],y1[10000],z1[10000]*/;
 	void Put_File(),Fixed_Atom(),MC_Annealing(),OutputPara();
 

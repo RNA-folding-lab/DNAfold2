@@ -16,7 +16,9 @@ UTILS_DIR = $(SRC_DIR)/utils
 REBUILD_DIR = $(SRC_DIR)/rebuild
 INITIAL_DIR = $(SRC_DIR)/initial
 
-# Core binaries
+# Core binaries (buildable from source)
+# Note: TiRNA_remc is a pre-compiled binary (no source available)
+#       It must be preserved in bin/ - do not delete it
 CORE_BINS = $(BIN_DIR)/TiRNA_sa $(BIN_DIR)/TiRNA_optimize
 
 # Analysis binaries

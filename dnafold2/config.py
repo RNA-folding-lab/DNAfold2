@@ -4,10 +4,13 @@ DNAfold2 Configuration Module
 Handles parsing, validation, and management of folding configuration parameters.
 """
 
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional, Dict, Any
 import re
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -38,6 +41,7 @@ class FoldingConfig:
     
     def __post_init__(self):
         """Validate configuration parameters."""
+        logger.debug("Validating configuration parameters...")
         if self.sampling_method not in ("remc", "sa"):
             raise ValueError(f"sampling_method must be 'remc' or 'sa', got {self.sampling_method}")
         if self.folding_steps < 1:
@@ -56,6 +60,8 @@ class FoldingConfig:
             raise ValueError("conf_output_freq must be positive")
         if self.print_freq < 1:
             raise ValueError("print_freq must be positive")
+        logger.debug("Configuration valid: method=%s, steps=%d, threads=%d",
+                     self.sampling_method, self.folding_steps, self.n_threads)
     
     @classmethod
     def from_file(cls, config_path: str | Path) -> "FoldingConfig":
@@ -76,6 +82,7 @@ class FoldingConfig:
             Ncout 10                   #Number of output structures
         """
         config_path = Path(config_path)
+        logger.debug("Loading configuration from %s", config_path)
         if not config_path.exists():
             raise FileNotFoundError(f"Configuration file not found: {config_path}")
         
@@ -107,6 +114,7 @@ class FoldingConfig:
                 elif key == "ncout":
                     params["n_structures"] = int(value)
         
+        logger.debug("Loaded configuration: %s", params)
         return cls(**params)
     
     def to_file(self, config_path: str | Path) -> None:
@@ -133,6 +141,7 @@ Print_freq {self.print_freq}             #Screen output frequency
         
         with open(config_path, 'w') as f:
             f.write(content)
+        logger.debug("Configuration written to %s", config_path)
     
     def to_dict(self) -> Dict[str, Any]:
         """Convert configuration to dictionary."""
@@ -161,6 +170,7 @@ def validate_sequence(sequence: str) -> str:
     Raises:
         ValueError: If sequence contains invalid characters
     """
+    logger.debug("Validating sequence (raw length=%d)", len(sequence))
     sequence = sequence.upper().strip()
     
     # Remove whitespace and newlines
@@ -177,4 +187,5 @@ def validate_sequence(sequence: str) -> str:
     if len(sequence) < 4:
         raise ValueError("Sequence must be at least 4 nucleotides long")
     
+    logger.debug("Sequence validated: length=%d", len(sequence))
     return sequence

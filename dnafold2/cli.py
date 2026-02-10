@@ -5,12 +5,41 @@ Provides a command-line interface for DNA structure folding.
 """
 
 import argparse
+import logging
 import sys
 from pathlib import Path
 from typing import Optional
 
 from .config import FoldingConfig, validate_sequence
 from .core import DNAFolder, fold
+
+logger = logging.getLogger(__name__)
+
+
+def setup_logging(level: str = "INFO") -> None:
+    """Configure logging for the dnafold2 package.
+    
+    Args:
+        level: Log level string (DEBUG, INFO, WARNING, ERROR)
+    """
+    numeric_level = getattr(logging, level.upper(), logging.INFO)
+    
+    # Configure the root dnafold2 logger
+    pkg_logger = logging.getLogger("dnafold2")
+    pkg_logger.setLevel(numeric_level)
+    
+    # Don't add handlers if they already exist (avoid duplicate output)
+    if not pkg_logger.handlers:
+        handler = logging.StreamHandler(sys.stderr)
+        handler.setLevel(numeric_level)
+        
+        if numeric_level <= logging.DEBUG:
+            fmt = "%(asctime)s [%(levelname)-7s] %(name)s: %(message)s"
+        else:
+            fmt = "%(asctime)s [%(levelname)-7s] %(message)s"
+        
+        handler.setFormatter(logging.Formatter(fmt, datefmt="%H:%M:%S"))
+        pkg_logger.addHandler(handler)
 
 
 def create_parser() -> argparse.ArgumentParser:
@@ -106,7 +135,13 @@ Examples:
     fold_parser.add_argument(
         "--verbose",
         action="store_true",
-        help="Print progress information"
+        help="Enable verbose logging (equivalent to --log-level DEBUG)"
+    )
+    fold_parser.add_argument(
+        "--log-level",
+        choices=["DEBUG", "INFO", "WARNING", "ERROR"],
+        default=None,
+        help="Set logging level (default: INFO, or DEBUG if --verbose is used)"
     )
     
     # Config command
@@ -166,7 +201,7 @@ def cmd_fold(args: argparse.Namespace) -> int:
         sequence = args.sequence
     else:
         if not args.input.exists():
-            print(f"Error: Input file not found: {args.input}", file=sys.stderr)
+            logger.error("Input file not found: %s", args.input)
             return 1
         sequence = args.input.read_text().strip()
     
@@ -174,11 +209,12 @@ def cmd_fold(args: argparse.Namespace) -> int:
     try:
         sequence = validate_sequence(sequence)
     except ValueError as e:
-        print(f"Error: {e}", file=sys.stderr)
+        logger.error("Sequence validation failed: %s", e)
         return 1
     
     # Build configuration
     if args.config and args.config.exists():
+        logger.info("Loading configuration from %s", args.config)
         config = FoldingConfig.from_file(args.config)
     else:
         config = FoldingConfig()
@@ -199,16 +235,14 @@ def cmd_fold(args: argparse.Namespace) -> int:
     
     # Run folding
     try:
-        if args.verbose:
-            print(f"DNAfold2 - DNA Structure Prediction")
-            print(f"{'='*40}")
-            print(f"Sequence: {sequence[:50]}{'...' if len(sequence) > 50 else ''}")
-            print(f"Length: {len(sequence)} nt")
-            print(f"Method: {config.sampling_method.upper()}")
-            print(f"Steps: {config.folding_steps:,}")
-            print(f"Na+: {config.na_concentration} mM, Mg2+: {config.mg_concentration} mM")
-            print(f"Output: {args.output}")
-            print()
+        logger.info("DNAfold2 - DNA Structure Prediction")
+        logger.info("=" * 40)
+        logger.info("Sequence: %s%s", sequence[:50], "..." if len(sequence) > 50 else "")
+        logger.info("Length: %d nt", len(sequence))
+        logger.info("Method: %s", config.sampling_method.upper())
+        logger.info("Steps: %s", f"{config.folding_steps:,}")
+        logger.info("Na+: %.0f mM, Mg2+: %.0f mM", config.na_concentration, config.mg_concentration)
+        logger.info("Output: %s", args.output)
         
         result = fold(
             sequence=sequence,
@@ -217,16 +251,15 @@ def cmd_fold(args: argparse.Namespace) -> int:
             verbose=args.verbose
         )
         
-        if args.verbose:
-            print(f"\nResults saved to: {result.output_dir}")
-            print(f"  CG structures: {len(result.cg_structures)}")
-            print(f"  All-atom structures: {len(result.all_atom_structures)}")
-            print(f"  Elapsed time: {result.elapsed_time:.1f}s")
+        logger.info("Results saved to: %s", result.output_dir)
+        logger.info("  CG structures: %d", len(result.cg_structures))
+        logger.info("  All-atom structures: %d", len(result.all_atom_structures))
+        logger.info("  Elapsed time: %.1fs", result.elapsed_time)
         
         return 0
     
     except Exception as e:
-        print(f"Error during folding: {e}", file=sys.stderr)
+        logger.error("Error during folding: %s", e, exc_info=True)
         return 1
 
 
@@ -239,7 +272,7 @@ def cmd_config(args: argparse.Namespace) -> int:
     )
     
     config.to_file(args.output)
-    print(f"Configuration saved to: {args.output}")
+    logger.info("Configuration saved to: %s", args.output)
     return 0
 
 
@@ -293,6 +326,13 @@ def main() -> int:
         from . import __version__
         print(f"dnafold2 {__version__}")
         return 0
+    
+    # Setup logging based on arguments
+    if args.command == "fold":
+        log_level = args.log_level or ("DEBUG" if args.verbose else "INFO")
+        setup_logging(log_level)
+    else:
+        setup_logging("INFO")
     
     if args.command == "fold":
         return cmd_fold(args)

@@ -4,11 +4,14 @@ DNAfold2 Utility Functions
 Helper functions for file handling, process management, and validation.
 """
 
+import logging
 import os
 import subprocess
 import shutil
 from pathlib import Path
 from typing import Optional, List, Tuple
+
+logger = logging.getLogger(__name__)
 
 
 def get_package_root() -> Path:
@@ -76,7 +79,9 @@ def compile_source(
     Returns:
         Tuple of (success, message)
     """
+    logger.debug("Compiling %s -> %s", source_file, output_file)
     if not source_file.exists():
+        logger.error("Source file not found: %s", source_file)
         return False, f"Source file not found: {source_file}"
     
     # Determine compiler based on file extension
@@ -105,11 +110,14 @@ def compile_source(
         
         if result.returncode == 0:
             os.chmod(output_file, 0o755)
+            logger.info("Successfully compiled %s", source_file.name)
             return True, f"Successfully compiled {source_file.name}"
         else:
+            logger.error("Compilation of %s failed: %s", source_file.name, result.stderr[:300])
             return False, f"Compilation failed: {result.stderr}"
     
     except Exception as e:
+        logger.error("Compilation error for %s: %s", source_file.name, e)
         return False, f"Compilation error: {str(e)}"
 
 
@@ -130,11 +138,14 @@ def run_executable(
     Returns:
         Tuple of (return_code, stdout, stderr)
     """
+    logger.debug("Running executable: %s (cwd=%s, timeout=%s)", executable, cwd, timeout)
     if not executable.exists():
+        logger.error("Executable not found: %s", executable)
         raise FileNotFoundError(f"Executable not found: {executable}")
     
     if not os.access(executable, os.X_OK):
         os.chmod(executable, 0o755)
+        logger.debug("Set execute permission on %s", executable)
     
     run_env = os.environ.copy()
     if env:
@@ -149,11 +160,14 @@ def run_executable(
             timeout=timeout,
             env=run_env
         )
+        logger.debug("Executable %s returned code %d", executable.name, result.returncode)
         return result.returncode, result.stdout, result.stderr
     
     except subprocess.TimeoutExpired:
+        logger.error("Executable %s timed out after %ss", executable.name, timeout)
         return -1, "", "Process timed out"
     except Exception as e:
+        logger.error("Executable %s failed: %s", executable.name, e)
         return -1, "", str(e)
 
 
@@ -169,7 +183,9 @@ def read_sequence_file(seq_file: Path) -> str:
     if not seq_file.exists():
         raise FileNotFoundError(f"Sequence file not found: {seq_file}")
     
-    return seq_file.read_text().strip()
+    content = seq_file.read_text().strip()
+    logger.debug("Read sequence from %s (length=%d)", seq_file, len(content))
+    return content
 
 
 def write_sequence_file(sequence: str, seq_file: Path) -> None:
@@ -181,6 +197,7 @@ def write_sequence_file(sequence: str, seq_file: Path) -> None:
     """
     seq_file.parent.mkdir(parents=True, exist_ok=True)
     seq_file.write_text(sequence.upper().strip() + "\n")
+    logger.debug("Wrote sequence to %s", seq_file)
 
 
 def cleanup_directory(dir_path: Path, keep_results: bool = True) -> None:
@@ -190,7 +207,9 @@ def cleanup_directory(dir_path: Path, keep_results: bool = True) -> None:
         dir_path: Directory to clean
         keep_results: If True, keep result files
     """
+    logger.debug("Cleaning up directory: %s (keep_results=%s)", dir_path, keep_results)
     if not dir_path.exists():
+        logger.debug("Directory does not exist, nothing to clean")
         return
     
     if keep_results:

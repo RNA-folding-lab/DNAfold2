@@ -32,7 +32,7 @@ class FoldingConfig:
     na_concentration: float = 1000.0
     mg_concentration: float = 0.0
     n_structures: int = 10
-    n_threads: int = 15
+    n_threads: int = 4
     conf_output_freq: int = 500
     print_freq: int = 10000
     

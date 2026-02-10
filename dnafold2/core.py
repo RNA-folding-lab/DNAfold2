@@ -273,7 +273,7 @@ class DNAFolder:
                     env=env,
                     capture_output=True, 
                     text=True,
-                    timeout=3600  # 1 hour timeout per step
+                    timeout=86400  # 24 hour timeout per step
                 )
                 if result.returncode != 0 and verbose:
                     print(f"    Warning: {desc} returned code {result.returncode}")

@@ -99,6 +99,11 @@ Examples:
         help="Number of structures to predict"
     )
     fold_parser.add_argument(
+        "--n-threads",
+        type=int,
+        help="Number of temperature replicas (1-20, should match available CPUs for REMC)"
+    )
+    fold_parser.add_argument(
         "--verbose",
         action="store_true",
         help="Print progress information"
@@ -189,6 +194,8 @@ def cmd_fold(args: argparse.Namespace) -> int:
         config.mg_concentration = args.mg_concentration
     if args.n_structures:
         config.n_structures = args.n_structures
+    if args.n_threads:
+        config.n_threads = args.n_threads
     
     # Run folding
     try:

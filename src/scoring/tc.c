@@ -10,7 +10,7 @@ int main()
 	FILE *inna, *incl, *tempna, *tempcl;
 	float x,y,z,r,q,d1;
 	int cn, n, cn0, cnna, cncl, cnna0, cncl0;
-	char cc,dd[3];
+	char cc,dd[4];
 	int N=1;
 	infile=fopen("min_conf.dat","r+");
 	tempfile=fopen("min_conf.dat","r+");

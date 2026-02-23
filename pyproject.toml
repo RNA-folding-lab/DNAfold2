@@ -59,6 +59,12 @@ include = ["dnafold2*"]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 addopts = "-v --tb=short"
+markers = [
+    "unit: fast deterministic unit tests",
+    "contract: fixture-based stage contract tests",
+    "smoke: short end-to-end smoke checks",
+    "slow: long-running tests excluded by default",
+]
 
 [tool.black]
 line-length = 100

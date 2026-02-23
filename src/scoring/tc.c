@@ -1,4 +1,13 @@
-/*for changing conformation data to standard PDB files*/
+/*
+ * tc.c
+ * -----------------------------------------------------------------------------
+ * Convert selected conformations from min_conf.dat into multi-model PDB output
+ * (cf.pdb). This stage runs after low-energy frame extraction and before
+ * structural clustering.
+ *
+ * Optional ionic trajectories (confi.dat / confcl.dat) are appended as
+ * additional chains when present.
+ */
 
 #include <stdio.h>
 #include <math.h>

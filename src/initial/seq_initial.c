@@ -1,3 +1,21 @@
+/*
+ * seq_initial.c
+ * -----------------------------------------------------------------------------
+ * Build the initial coarse-grained conformation file (ch.dat) from:
+ *   1) seq.dat      : one DNA sequence line
+ *   2) initial.dat  : template bead coordinates
+ *
+ * For every nucleotide there are three beads in order P-S-Base. This program
+ * relabels each third bead with the sequence base (A/T/C/G) while preserving
+ * template coordinates and auxiliary columns.
+ *
+ * Input columns in initial.dat:
+ *   bead_id residue_id bead_type x y z R Q f
+ *
+ * Output:
+ *   ch.dat with the same columns and sequence-correct base labels.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

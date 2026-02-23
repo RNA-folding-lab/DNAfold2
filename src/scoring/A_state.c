@@ -1,4 +1,18 @@
-/****************** 该程序是用来判断结构态，用于wham当中 ***************************/
+/*
+ * A_state.c
+ * -----------------------------------------------------------------------------
+ * Legacy scorer utility used to extract selected conformations from conf_0.dat
+ * into min_conf.dat based on line indices listed in min.dat.
+ *
+ * Data contract:
+ *   - ch.dat      : used only to determine number of bead lines per conformation
+ *   - min.dat     : selected conformation indices from Umin.py
+ *   - conf_0.dat  : concatenated conformations
+ *   - min_conf.dat: extracted conformations for downstream PDB conversion
+ *
+ * Note: this behavior is now also implemented in Python
+ * (dnafold2.stage_tools.extract_min_conformations).
+ */
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -70,4 +84,3 @@ int main()
     	fclose(input);fclose(output);fclose(inputmin);
       	return 0;
 }
-

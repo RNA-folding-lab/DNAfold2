@@ -1,4 +1,23 @@
-/********************* 本程序是用来计算假结和多分支结的热稳定性 ****************/
+/*
+ * wham.c
+ * -----------------------------------------------------------------------------
+ * Weighted Histogram Analysis Method (WHAM) thermal stability analysis.
+ *
+ * Purpose:
+ *   - Combine multi-temperature energy/base-pair trajectories.
+ *   - Estimate thermodynamic observables versus temperature.
+ *
+ * Inputs:
+ *   - fragment/Energy_*.dat
+ *   - fragment/bp_*.dat
+ *
+ * Outputs:
+ *   - thermal_stability.dat
+ *   - Probability.dat
+ *   - thermo.dat
+ *   - cv_tm.dat
+ *   - BP_tm.dat
+ */
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>

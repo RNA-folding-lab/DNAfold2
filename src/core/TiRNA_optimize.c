@@ -1,4 +1,25 @@
-/************* 这个程序是用来优化RNA结构 *****************/
+/*
+ * TiRNA_optimize.c
+ * -----------------------------------------------------------------------------
+ * Energy optimization stage for coarse-grained DNA/RNA structures.
+ *
+ * Purpose:
+ *   - Read selected coarse-grained structures and optimization configuration.
+ *   - Perform replica/parallel optimization moves under model energy terms.
+ *   - Write optimized trajectories and energies used by re-scoring.
+ *
+ * Typical inputs:
+ *   - ch_0.dat
+ *   - config1.dat
+ *   - stem.dat / stem_kissing.dat
+ *
+ * Typical outputs:
+ *   - conf_0.dat / Energy_0.dat style optimization outputs
+ *
+ * Notes:
+ *   - Uses OpenMP thread-private global state.
+ *   - Numeric behavior is performance-sensitive; keep changes conservative.
+ */
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>

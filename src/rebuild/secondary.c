@@ -1,3 +1,24 @@
+/*
+ * secondary.c
+ * -----------------------------------------------------------------------------
+ * Secondary-structure inference from CG coordinates.
+ *
+ * Purpose:
+ *   - Detect base pairing from geometric criteria in CG.pdb.
+ *   - Build stem/kissing-stem descriptors for rebuild and analysis stages.
+ *
+ * Inputs:
+ *   - CG.pdb
+ *
+ * Outputs:
+ *   - stem.dat
+ *   - stem_kissing.dat
+ *   - cs.dat
+ *   - DNA_type
+ *   - state.dat
+ *   - sec_struc.dat
+ */
+
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>

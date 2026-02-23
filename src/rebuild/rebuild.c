@@ -1,6 +1,22 @@
-/**********
-This program is used to convert CG conf. to All-Atom structure
-***********/
+/*
+ * rebuild.c
+ * -----------------------------------------------------------------------------
+ * Reconstruct all-atom structures from coarse-grained (CG) models.
+ *
+ * High-level workflow:
+ *   1) Read CG model (CG.pdb) and secondary-structure constraints (cs.dat)
+ *   2) Assemble nucleotide fragments from the local fragment library
+ *   3) Fit/optimize assembled atomistic geometry
+ *   4) Write All_atom.pdb
+ *
+ * Inputs:
+ *   - CG.pdb
+ *   - cs.dat
+ *   - fragment/** libraries
+ *
+ * Output:
+ *   - All_atom.pdb
+ */
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -935,4 +951,3 @@ void secondary()
           index++;
        }
 }
-

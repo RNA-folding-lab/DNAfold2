@@ -1,4 +1,12 @@
-/*for changing conformation data to standard PDB files*/
+/*
+ * t1.c
+ * -----------------------------------------------------------------------------
+ * Convert coarse-grained conformations from conf_0.dat into multi-model PDB
+ * output (cf.pdb) for downstream clustering and scoring.
+ *
+ * Optional ionic trajectories (confi.dat / confcl.dat) are appended as
+ * additional chains when present.
+ */
 
 #include <stdio.h>
 #include <math.h>
